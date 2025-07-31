@@ -1,4 +1,18 @@
+# SVGCloudTech DevOps Weekend Batch 
 
-# SVGCloudTech DevOps Weekend Batch (Student Repo)
+## Week 1 Assignments
+- `intro-devops.md`: Define DevOps, tools used, draw lifecycle
+- `agile-vs-devops.md`: Table comparison + CI/CD explanation
 
-Use this repo to track weekly assignments. Push your .md files, YAMLs, scripts, etc. here.
+## Folder Naming Convention
+```
+week01-aug02-aug03/
+week02-aug09-aug10/
+...
+```
+
+## Tools Required
+- Git & GitHub
+- AWS Free Tier
+- Visual Studio Code
+- GitLens Extension
