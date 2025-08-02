@@ -1,13 +1,92 @@
-# Agile vs DevOps vs Waterfall
+# Agile vs. DevOps
 
-| Model      | Focus                | Delivery Cycle | Feedback Loop    |
-|------------|----------------------|----------------|------------------|
-| Waterfall  | Sequential Process   | Long (weeks)   | Late (end phase) |
-| Agile      | Iterative & Adaptive | 1-2 weeks      | Frequent         |
-| DevOps     | Continuous Delivery  | Ongoing        | Real-time        |
+## Introduction
 
-# What is CI/CD?
-CI/CD stands for Continuous Integration and Continuous Deployment. It is a method to frequently deliver apps to customers by introducing automation into the stages of app development.
+When the agile methodology gained widespread adoption in the early 2000s, it transformed the way we develop software. However, it left out a critical piece: the operations teams who deploy and manage these products. This gap led to the rise of DevOps—a philosophy designed to bridge the divide between development and operations. Rather than being replacements for each other, Agile and DevOps often complement one another.
 
-# GitHub Flow Diagram
-![GitHub Flow](https://guides.github.com/activities/hello-world/branching.png)
+---
+
+## What is Agile?
+
+Agile is an iterative approach to project management and software development that emphasizes:
+
+* Collaboration with stakeholders
+* Continuous customer feedback
+* Small, rapid releases
+
+Originally arising from the software development sector, agile helps teams adapt to changing market conditions. Agile includes multiple methodologies like Scrum and Extreme Programming (XP), unified through the Agile Manifesto—12 principles based on 4 core values:
+
+1. Individuals and interactions over processes and tools
+2. Working software over comprehensive documentation
+3. Customer collaboration over contract negotiation
+4. Responding to change over following a plan
+
+Agile focuses on:
+
+* Planning and design upfront
+* Development in small batches
+* Fast feedback loops
+
+---
+
+## What is DevOps?
+
+DevOps is a practice aimed at unifying software development (Dev) and software operation (Ops). It enhances Agile by including the entire lifecycle—from development to deployment and infrastructure management.
+
+Key characteristics:
+
+* Automation of testing and delivery pipelines
+* Cultural shift toward shared responsibility
+* Real-time feedback between teams
+
+Two common frameworks within DevOps:
+
+* **The Three Ways**: Flow, Feedback, Continuous Learning & Experimentation
+* **CALMS**:
+
+  * **Culture**: Collaboration between dev & ops
+  * **Automation**: Faster, higher-quality software
+  * **Lean**: Embrace experimentation and continuous improvement
+  * **Measurement**: Data-driven decision-making
+  * **Sharing**: Team knowledge and best practices
+
+---
+
+## Differences Between Agile and DevOps
+
+| Agile                             | DevOps                                        |
+| --------------------------------- | --------------------------------------------- |
+| Focuses on development only       | Includes development and operations           |
+| Iterative development             | Test and delivery automation                  |
+| Collaboration with product owners | Collaboration across development & operations |
+| Structured planned work           | Also manages unplanned operations work        |
+
+---
+
+## Similarities Between Agile and DevOps
+
+* Both emphasize collaboration and communication.
+* Both aim to deliver high-quality software quickly.
+* Both value feedback loops and continuous improvement.
+* Automation is a common goal in both approaches.
+
+Agile’s principles, like continuous delivery and small frequent releases, align closely with DevOps practices. Scrum ceremonies like standups and retrospectives promote the same communication that DevOps encourages across silos.
+
+---
+
+## When Do Agile and DevOps Work Together?
+
+DevOps can be viewed as the natural evolution or missing piece of Agile. Agile lays the groundwork for development, while DevOps extends those principles into deployment and maintenance.
+
+For example:
+
+* Agile mentions continuous delivery—but DevOps implements it end-to-end.
+* Agile promotes stakeholder feedback—DevOps ensures feedback loops reach operations as well.
+
+---
+
+## Conclusion
+
+Agile and DevOps are not mutually exclusive—they are complementary. While Agile transforms the way we write software, DevOps transforms the way we deliver and maintain it. Both aim to improve speed, quality, and adaptability. Organizations struggling with Agile may find success by integrating DevOps principles into their workflow.
+
+Together, Agile and DevOps provide a holistic framework for modern software development and delivery.
