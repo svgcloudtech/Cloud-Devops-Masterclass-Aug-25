@@ -8,24 +8,22 @@ When the agile methodology gained widespread adoption in the early 2000s, it tra
 
 ## What is Agile?
 
-Agile is an iterative approach to project management and software development that emphasizes:
+Agile is an iterative approach to project management and software development that focuses on collaboration, customer feedback, and rapid releases. It arose in the early 2000s from the software development industry, helping development teams react and adapt to changing market conditions and customer demands.
 
-* Collaboration with stakeholders
-* Continuous customer feedback
-* Small, rapid releases
+<img width="1600" height="800" alt="image" src="https://github.com/user-attachments/assets/ad052409-2e32-4d22-9450-c9f549142304" />
 
-Originally arising from the software development sector, agile helps teams adapt to changing market conditions. Agile includes multiple methodologies like Scrum and Extreme Programming (XP), unified through the Agile Manifesto—12 principles based on 4 core values:
+## Structured framework
+<img width="1268" height="853" alt="image" src="https://github.com/user-attachments/assets/7eda854b-9781-44cf-9bac-d9c63cf7d3b4" />
 
-1. Individuals and interactions over processes and tools
-2. Working software over comprehensive documentation
-3. Customer collaboration over contract negotiation
-4. Responding to change over following a plan
+## Backlog refinement
+<img width="1480" height="970" alt="image" src="https://github.com/user-attachments/assets/34dd477d-055a-45df-b367-15592c42a4c5" />
 
-Agile focuses on:
+## Sprints
+<img width="1480" height="990" alt="image" src="https://github.com/user-attachments/assets/3eafa1df-c24d-466d-896c-bad05ad017b6" />
 
-* Planning and design upfront
-* Development in small batches
-* Fast feedback loops
+## Timelines
+
+<img width="1476" height="986" alt="image" src="https://github.com/user-attachments/assets/1675d076-03db-4c1f-8b4c-67314c220be5" />
 
 ---
 
