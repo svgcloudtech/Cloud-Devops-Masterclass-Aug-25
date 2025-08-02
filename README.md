@@ -2,7 +2,7 @@
   
 
 
-## Week 1 Assignments
+## Week 1 
 - `intro-devops.md`: Define DevOps, tools used, draw lifecycle
 - `agile-vs-devops.md`: Table comparison + CI/CD explanation
 
@@ -15,6 +15,5 @@ Week-02-Aug-09-10/
 
 ## Tools Required
 - Git & GitHub
-- AWS Free Tier
+- JIRA
 - Visual Studio Code
-- GitLens Extension
