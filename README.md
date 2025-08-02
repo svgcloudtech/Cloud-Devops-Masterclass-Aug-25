@@ -1,4 +1,4 @@
-# SVGCloudTech Cloud-Devops-masterclass-Aug-25 (Weekend Batch)
+# SVGCloudTech Cloud-Devops-Masterclass-Aug-25 (Weekend Batch)
   
 
 
