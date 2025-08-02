@@ -1,4 +1,6 @@
-# SVGCloudTech DevOps Weekend Batch 
+# SVGCloudTech Cloud-Devops-masterclass-Aug-25 (Weekend Batch)
+  
+
 
 ## Week 1 Assignments
 - `intro-devops.md`: Define DevOps, tools used, draw lifecycle
