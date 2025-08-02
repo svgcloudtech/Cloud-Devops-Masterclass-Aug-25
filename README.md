@@ -6,8 +6,8 @@
 
 ## Folder Naming Convention
 ```
-week01-aug02-aug03/
-week02-aug09-aug10/
+week01-Aug03/
+Week-02-Aug-09-10
 ...
 ```
 
