@@ -90,6 +90,7 @@ GitHub is a platform for hosting and collaborating on Git repositories in the cl
 ```bash
 git init
 git clone <repository-url>
+git branch
 git status
 git add .
 git commit -m "your message"
