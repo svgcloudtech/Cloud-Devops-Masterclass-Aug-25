@@ -35,15 +35,15 @@ DevOps is a practice aimed at unifying software development (Dev) and software o
 A DevOps team includes developers and IT operations working collaboratively throughout the product lifecycle, in order to increase the speed and quality of software deployment. It’s a new way of working, a cultural shift, that has significant implications for teams and the organizations they work for.
 
 ## The DevOps lifecycle
-<img width="2240" height="1090" alt="image" src="https://github.com/user-attachments/assets/42f24a4c-a494-4d92-bc6a-e8a33917d2bd" />
+<img width="1592" height="854" alt="image" src="https://github.com/user-attachments/assets/36e4e18f-9951-4642-9ec4-2e9123f91653" />
 
 ### The DevOps lifecycle consists of 8 phases.
 
 * Discover
 * Plan
-* Build
+* Code & Build
 * Test
-* Deploy
+* Deploy/Release
 * Operate
 * Observe
 * Continuous Feedback
@@ -54,8 +54,6 @@ A DevOps team includes developers and IT operations working collaboratively thro
 * Rapid deployment
 * Quality and reliability
 * Security
-
-
 
 
 ## Key characteristics:
