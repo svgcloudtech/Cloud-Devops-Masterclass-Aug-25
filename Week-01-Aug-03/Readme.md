@@ -1,6 +1,6 @@
-# DevOps Training - Day 1 (Student Guide)
+# DevOps Training - Day 1 
 
-## Agenda (3 Hours)
+## Agenda (~2Hours)
 
 | Topic                             |
 |-----------------------------------|
