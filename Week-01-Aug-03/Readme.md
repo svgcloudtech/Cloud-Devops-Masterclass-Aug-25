@@ -1,10 +1,6 @@
-# DevOps Day 1
+# DevOps Training - Day 1 (Student Guide)
 
-Welcome to Day 1 of the DevOps training! This session is designed to help you understand the foundation of modern software delivery through SDLC, Agile, and DevOps practices.
-
----
-
-## Agenda (2-3 Hours)
+## Agenda (3 Hours)
 
 | Topic                             |
 |-----------------------------------|
@@ -16,78 +12,99 @@ Welcome to Day 1 of the DevOps training! This session is designed to help you un
 
 ---
 
-## What is SDLC?
+## 1. What is SDLC?
 
-**SDLC (Software Development Life Cycle)** is a structured process for building software systems efficiently and with quality. It defines the stages involved in developing a software product from start to finish.
+**SDLC (Software Development Life Cycle)** is a process used by software developers and teams to design, develop, test, and deploy software. It ensures a systematic approach to building software applications.
 
-### SDLC Phases:
-1. **Requirement Gathering** – Understand user needs
-2. **Planning** – Define scope, resources, and timelines
-3. **Design** – Create technical architecture
-4. **Development** – Write the actual code
-5. **Testing** – Validate the product against requirements
-6. **Deployment** – Release the product to users
-7. **Maintenance** – Fix bugs, make improvements post-deployment
+### Common SDLC Phases:
 
-### Common SDLC Models:
-- **Waterfall**
-- **Agile** (most modern)
+1. Requirement Gathering
+2. Planning
+3. Design
+4. Development
+5. Testing
+6. Deployment
+7. Maintenance
 
----
+### Popular SDLC Models:
 
-## What is Agile?
-
-Agile is an iterative approach to software development where teams deliver value to customers faster and with fewer headaches.
-
-### Key Concepts:
-- **Short sprints**
-- **Continuous feedback**
-- **Cross-functional teams**
-- **User stories, epics, and backlogs**
+- Waterfall Model
+- Agile Model
 
 ---
 
-## Agile vs DevOps
+## 2. What is Agile?
+
+Agile is a methodology for software development that emphasizes flexibility, collaboration, and rapid delivery of functional software through small, iterative cycles called sprints.
+
+### Key Characteristics:
+
+- Short development cycles (sprints)
+- Frequent delivery of working software
+- Continuous feedback from stakeholders
+- Collaboration between cross-functional teams
+- Tools: Jira, Scrum boards, user stories, epics
+
+---
+
+## 3. Agile vs DevOps
 
 | Feature                 | Agile                                 | DevOps                                      |
-|-------------------------|----------------------------------------|----------------------------------------------|
-| **Focus**               | Software development                  | Software development **and** operations     |
-| **Goal**                | Faster delivery of software features  | Faster and more reliable delivery pipelines |
-| **Team Structure**      | Developers & QA                       | Dev, QA, Ops (cross-functional teams)        |
-| **Feedback Frequency**  | After each sprint                     | Continuous (real-time monitoring)            |
-| **Tools**               | Jira, Confluence, Scrum boards        | Git, Jenkins, Docker, Kubernetes, etc.       |
-| **Automation Level**    | Medium (mostly testing)               | High (CI/CD, infra as code, monitoring)      |
-| **End Result**          | Working software                      | Working software that’s stable in production |
+|-------------------------|---------------------------------------|----------------------------------------------|
+| Focus                   | Development Process                   | Development and Operations                  |
+| Goal                    | Deliver software quickly              | Deliver software reliably and frequently    |
+| Team Structure          | Dev and QA                            | Dev, QA, and Ops (collaborative teams)      |
+| Feedback Cycle          | Sprint-based                          | Continuous                                  |
+| Tools                   | Jira, Confluence                      | Git, Jenkins, Docker, Kubernetes, etc.      |
+| Automation Level        | Moderate (mostly testing)             | High (CI/CD, infra as code, monitoring)     |
+| Final Outcome           | Working software                      | Working software that is stable in production |
 
 ---
 
-## DevOps Overview
+## 4. What is DevOps?
 
-DevOps is a cultural and technical movement that combines software development (Dev) with IT operations (Ops) to shorten the development lifecycle and deliver high-quality software continuously.
+DevOps is a combination of cultural philosophies, practices, and tools that integrates and automates the work of software development and IT operations teams. It aims to shorten the development lifecycle and provide continuous delivery of high-quality software.
 
-### 5 Key DevOps Principles:
-1. **Collaboration** – Dev and Ops work as one team
-2. **Automation** – Code builds, testing, deployment
-3. **Continuous Improvement** – Short iterations, constant learning
-4. **Customer-Centric** – Build based on real user feedback
-5. **Create with the End in Mind** – Think about the live environment from Day 1
+### Key DevOps Principles:
+
+1. Collaboration: Development and operations work together throughout the product lifecycle.
+2. Automation: Automate testing, building, deployment, and infrastructure.
+3. Continuous Improvement: Frequent iterations and feedback to improve speed and quality.
+4. Customer-Centric: Focused on user feedback and value.
+5. Create with the End in Mind: Develop with deployment and operations in consideration from the start.
 
 ---
 
-## Git & GitHub Basics (Hands-on)
+## 5. Git and GitHub (Hands-on Practice)
 
-### Git:
-A distributed version control system used to manage code history and collaboration.
+### What is Git?
 
-### GitHub:
-An online platform to host and share Git repositories.
+Git is a distributed version control system used to track changes in source code during software development.
 
-### Essential Commands:
+### What is GitHub?
+
+GitHub is a platform for hosting and collaborating on Git repositories in the cloud.
+
+### Common Git Commands:
+
 ```bash
 git init
-git clone <repo-url>
+git clone <repository-url>
 git status
 git add .
-git commit -m "message"
+git commit -m "your message"
 git push origin main
+```
 
+
+## Practice Task:
+
+Create a GitHub account.
+
+Create a new repository.
+
+Clone it to your local machine.
+
+Create a file (e.g., index.html).
+
+Push the file to GitHub.
