@@ -31,7 +31,7 @@
 
 ## 1. Git Basics
 
-### 1.1 Configure Git (one-time)
+### 1.1 Configure Git
 ```bash
 git --version
 git config --global user.name "Your Name"
