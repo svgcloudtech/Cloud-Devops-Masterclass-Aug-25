@@ -1,44 +1,42 @@
-# DevOps Training – Day 2
+
+# DevOps Training – Day 2  
 **Date:** 10-Aug-2025  
 
 ---
 
-- **Git** installation steps (Git Bash recommended for Windows) → [Download Git](https://git-scm.com/downloads)  
-- **GitHub account** → [Create here](https://github.com)  
-  1. Go to [GitHub](https://github.com) and click **Sign Up**
-  2. Enter your email, password, and username
-  3. Verify your email address
-  4. Choose **Free Plan**
-  5. Complete setup and log in
+## Overview
 
-- **VS Code** installed → [Download VS Code](https://code.visualstudio.com)  
-  1. Download and install for your OS
-  2. Install extensions: GitLens, Prettier, Live Server
-  3. Open folder for project work
+This session covers essential DevOps skills including Git basics, GitHub workflows, Jira, VS Code setup, AWS EC2 launch, SSH access, and deploying a simple HTML site on EC2.
 
 ---
 
+## Topics Covered
+
 | Topic |
 |-------|
-| Git basics |
-| GitHub push/pull, branching |
-| Jira |
-| VS Code setup |
-| AWS account + EC2 launch |
-| SSH + Deploy HTML to EC2 |
+| Git basics and configuration |
+| GitHub push/pull, branching, and merge |
+| Jira project and issue management |
+| VS Code setup and Git integration |
+| AWS account setup and EC2 launch |
+| SSH into EC2 and deploy HTML site |
+| Pull latest code and redeploy |
 
 ---
 
 ## 1. Git Basics
 
-### 1.1 Configure Git
+### 1.1 Configure Git (one-time setup)
 ```bash
 git --version
 git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
+git config --list  # Verify your configuration
 ```
+> Tip: Use `git status` frequently to check changes and branch status.  
+> Note: Create a `.gitignore` file to exclude files/folders from version control.
 
-### 1.2 Create local repo & first commit
+### 1.2 Create a local repo & first commit
 ```bash
 mkdir my-first-repo
 cd my-first-repo
@@ -47,16 +45,17 @@ echo "Hello Git" > hello.txt
 git add hello.txt
 git commit -m "first commit: add hello.txt"
 git log --oneline
+git status
 ```
 
 ---
 
 ## 2. GitHub — Push/Pull & Branching
 
-### 2.1 Create a repository on GitHub
-1. Login to GitHub  
-2. Click **New** → Name repo (e.g., `day2-html-demo`)  
-3. Do not initialize with README (if pushing existing repo)  
+### 2.1 Create GitHub repo
+- Login to GitHub  
+- Click **New** → Name repo (e.g., `day2-html-demo`)  
+- Do not initialize with README if pushing an existing repo
 
 ### 2.2 Link local repo & push
 ```bash
@@ -65,87 +64,95 @@ git branch -M main
 git push -u origin main
 ```
 
-### 2.3 Create a branch & push
+### 2.3 Create a branch & push changes
 ```bash
 git checkout -b feature-html
-# edit files
+# Make changes/edit files
 git add index.html
 git commit -m "add index.html for demo"
 git push -u origin feature-html
 ```
 
 ### 2.4 Merge branch
-**Option A (GitHub UI):** Create Pull Request → Merge  
-**Option B (Local):**
+
+**Option A: GitHub UI**  
+Create Pull Request → Review → Merge  
+
+**Option B: Local CLI**
 ```bash
 git checkout main
 git merge feature-html
 git push origin main
 ```
+> Note: If merge conflicts occur, resolve conflicts in the files then commit.
+
+### 2.5 Useful commands & concepts
+- `git fetch` - Fetches latest changes without merging  
+- `git pull` - Fetches and merges changes from remote  
+- SSH Authentication (optional): Generate SSH keys with `ssh-keygen` and add your public key to GitHub for password-less access.
 
 ---
 
 ## 3. Jira Quick Practice
 - Create a Project  
 - Create an Epic (e.g., "Website Demo")  
-- Create Stories & Tasks  
-- Move tasks: **To Do → In Progress → Done**
+- Create Stories & Tasks linked to the Epic  
+- Move tasks through the workflow: To Do → In Progress → Done  
+
+> Tip: Reference Jira issue IDs in commit messages to link code changes with Jira tickets.
 
 ---
 
 ## 4. VS Code Setup
-- Install extensions: GitLens, Prettier, Live Server  
-- Open project folder in VS Code  
-- Use **Source Control** tab to stage, commit, push changes
+- Install extensions:  
+  - GitLens (Git superpowers)  
+  - Prettier (Code formatting)  
+  - Live Server (Static web server)  
+- Open your project folder in VS Code  
+- Use Source Control tab to stage, commit, and push changes  
+- Enable Settings Sync to save your extensions/settings across devices
 
 ---
 
-# AWS EC2 Setup Guide
+## 5. AWS EC2 Setup Guide
 
-This guide covers AWS account setup and EC2 launch in one continuous flow.
+### 5.1 AWS Account & Permissions
+1. Go to [AWS Free Tier](https://aws.amazon.com/free) → Create AWS account  
+2. Enter details, payment info, verify via phone OTP  
+3. Log in to AWS Console  
+4. Create an IAM user for daily use (do not use root account)  
+5. Attach `AmazonEC2FullAccess` policy (or least privilege required)  
+6. Enable MFA for security  
+7. Enable Billing alerts for cost monitoring  
 
----
-
-## 1. AWS Account & Permissions
-1. Go to [AWS Free Tier](https://aws.amazon.com/free) and click **Create an AWS Account**.
-2. Enter account details and payment info (mandatory for activation).
-3. Verify your account via phone OTP.
-4. Log in to AWS Console.
-5. Create an **IAM user** (avoid using root account).
-6. Attach **AmazonEC2FullAccess** policy to the IAM user.
-7. Enable **MFA** for the account.
-8. Enable **billing alerts**.
-
----
-
-## 2. Launch an EC2 Instance (Including Key Pair Creation)
-1. AWS Console → **EC2** → **Launch Instance**.
-2. **Name:** Choose a descriptive name (e.g., `demo-instance`).
-3. **AMI:** Select **Amazon Linux 2**.
-4. **Instance Type:** Choose **t2.micro** (Free Tier eligible).
-5. **Key Pair:**
-   - If you already have a key pair, select it from the list.
-   - If not, click **Create new key pair**:
-     - Enter a name (e.g., `demo-key`).
-     - Select `.pem` format.
-     - Download and save the file securely (you cannot download it again).
-6. **Network Settings (Security Group):**
-   - **Inbound Rule 1:** SSH (22) → My IP.
-   - **Inbound Rule 2:** HTTP (80) → 0.0.0.0/0.
-7. Click **Launch Instance**.
-8. Once running, note the **Public IPv4 address**.
+### 5.2 Launch an EC2 Instance
+1. Go to EC2 Dashboard → Launch Instance  
+2. Name your instance (e.g., `demo-instance`)  
+3. Select Amazon Linux 2 AMI  
+4. Choose `t2.micro` (Free Tier eligible)  
+5. Configure Key Pair:  
+   - Use existing or Create new key pair (e.g., `demo-key`)  
+   - Download `.pem` file and save securely  
+   - Set file permission: `chmod 400 demo-key.pem`  
+6. Configure Security Group inbound rules:  
+   - SSH (port 22) — Source: your IP (restrict for security)  
+   - HTTP (port 80) — Source: Anywhere (0.0.0.0/0) for web access  
+7. Launch instance and note Public IPv4 address  
 
 ---
 
-## 3. Connect to EC2
-Use the `.pem` key to SSH into your instance:
+## 6. Connect to EC2 Instance
 ```bash
-ssh -i your-key.pem ec2-user@<EC2-Public-IP>
-
+chmod 400 demo-key.pem  # Ensure private key permissions are secure
+ssh -i demo-key.pem ec2-user@<EC2-Public-IP>
+```
+> Troubleshooting:  
+> - If you get Permission denied (publickey), check `.pem` file permissions and username.  
+> - Use `ssh -vvv` for detailed connection debugging.
 
 ---
 
-## 7. SSH & Deploy HTML to EC2
+## 7. Deploy HTML to EC2
 
 ### 7.0 Create `index.html` locally
 ```html
@@ -162,7 +169,7 @@ ssh -i your-key.pem ec2-user@<EC2-Public-IP>
 </html>
 ```
 
-### 7.1 Push to GitHub
+### 7.1 Push to GitHub (if not done yet)
 ```bash
 git init
 git add index.html
@@ -172,13 +179,7 @@ git remote add origin https://github.com/<your-username>/day2-html-demo.git
 git push -u origin main
 ```
 
-### 7.2 SSH into EC2
-```bash
-chmod 400 my-key.pem
-ssh -i my-key.pem ec2-user@<EC2_PUBLIC_IP>
-```
-
-### 7.3 Install Apache & Git
+### 7.2 SSH to EC2 and install packages
 ```bash
 sudo yum update -y
 sudo yum install -y httpd git
@@ -186,7 +187,8 @@ sudo systemctl start httpd
 sudo systemctl enable httpd
 ```
 
-### 7.4 Deploy from GitHub
+### 7.3 Deploy website from GitHub
+
 **Option A: Clone directly to `/var/www/html`**
 ```bash
 cd /var/www/html
@@ -206,55 +208,52 @@ sudo chown apache:apache /var/www/html/index.html
 sudo systemctl restart httpd
 ```
 
-**Ensure Port 80 is open in Security Group inbound rules**
-
-### 7.5 Verify
+### Verify
 ```bash
 sudo systemctl status httpd
-ls -l /var/www/html/index.html
-curl -I http://localhost
+sudo tail -f /var/log/httpd/error_log
 ```
 
-### 7.6 Access in browser
+> Ensure port 80 is open in Security Group inbound rules.
+
+### 7.4 Access your webpage  
+Open in browser:  
 ```
-http://<EC2_PUBLIC_IP>/
+http://<EC2_Public_IP>/
 ```
 
 ---
 
-## 8. Pull Latest Code from GitHub and Redeploy
-
-If you make changes in your GitHub repo and want to update the EC2 site:
-
+## 8. Pull Latest Code & Redeploy
+After updating your GitHub repo, SSH to EC2 and run:
 ```bash
-ssh -i my-key.pem ec2-user@<EC2_PUBLIC_IP>
-
-# Go to the web root
 cd /var/www/html
-
-# Pull the latest changes
 sudo git pull origin main
-
-# Restart Apache
 sudo systemctl restart httpd
+```
+
+> Fix permissions if you face errors:
+```bash
+sudo chown -R apache:apache /var/www/html
+sudo chmod -R 755 /var/www/html
 ```
 
 ---
 
 ## 9. Hands-on Exercises
-1. Create and deploy `index.html` to EC2  
-2. Make a change in a feature branch → PR → merge → redeploy  
-3. Try `scp` deployment as alternative  
+- Create and deploy your own `index.html` file to EC2  
+- Create a feature branch → make changes → open Pull Request → merge → redeploy  
+- Try deploying files using `scp` as an alternative to Git  
 
 ---
 
 ## 10. Quick Command Reference
 
-### Git
+### Git commands
 ```bash
 git init
 git add .
-git commit -m "msg"
+git commit -m "message"
 git branch -M main
 git checkout -b feature
 git push -u origin feature
@@ -268,3 +267,16 @@ sudo systemctl start httpd
 sudo systemctl enable httpd
 sudo git clone https://github.com/<user>/<repo>.git /var/www/html
 ```
+
+---
+
+## Additional Tips & Best Practices
+- Always secure your `.pem` private keys (`chmod 400`). Never share.  
+- Use IAM users with least privileges, not root.  
+- Enable MFA on AWS accounts for better security.  
+- Regularly check EC2 security groups to restrict access.  
+- Use Git branching and PR workflows for collaboration and code quality.  
+- Use VS Code Git integration for a smooth development experience.  
+- Document commit messages clearly and link to Jira tickets when possible.
+
+---
