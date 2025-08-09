@@ -1,4 +1,4 @@
-# DevOps Training – Day 3
+# DevOps Training – Day 2
 **Date:** 10-Aug-2025  
 
 ---
