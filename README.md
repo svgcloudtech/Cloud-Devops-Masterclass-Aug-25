@@ -3,8 +3,8 @@
 
 
 ## Week 1 
-- `intro-devops.md`: Define DevOps, tools used, draw lifecycle
-- `agile-vs-devops.md`: Table comparison + CI/CD explanation
+- `intro-devops.md`: 
+- `agile-vs-devops.md`: 
 
 ## Folder Naming Convention
 ```
