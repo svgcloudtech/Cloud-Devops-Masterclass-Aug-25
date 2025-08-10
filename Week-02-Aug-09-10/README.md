@@ -1,12 +1,11 @@
-
-# DevOps Training – Day 2  
-**Date:** 10-Aug-2025  
+# DevOps Training – Day 2
+**Date:** 10-Aug-2025
 
 ---
 
 ## Overview
 
-This session covers essential DevOps skills including Git basics, GitHub workflows, Jira, VS Code setup, AWS EC2 launch, SSH access, and deploying a simple HTML site on EC2.
+This session covers essential DevOps skills including Git basics, GitHub workflows, Jira, VS Code setup, AWS EC2 launch, SSH access, and deploying a simple HTML site on EC2 using Python’s built-in HTTP server.
 
 ---
 
@@ -19,7 +18,7 @@ This session covers essential DevOps skills including Git basics, GitHub workflo
 | Jira project and issue management |
 | VS Code setup and Git integration |
 | AWS account setup and EC2 launch |
-| SSH into EC2 and deploy HTML site |
+| SSH into EC2 and deploy HTML site via Python HTTP server |
 | Pull latest code and redeploy |
 
 ---
@@ -136,7 +135,8 @@ git push origin main
    - Set file permission: `chmod 400 demo-key.pem`  
 6. Configure Security Group inbound rules:  
    - SSH (port 22) — Source: your IP (restrict for security)  
-   - HTTP (port 80) — Source: Anywhere (0.0.0.0/0) for web access  
+   - HTTP (port 80) — Optional if using Python server on port 8000  
+   - Custom TCP (port 8000) — Source: Anywhere (0.0.0.0/0) for Python server access  
 7. Launch instance and note Public IPv4 address  
 
 ---
@@ -152,90 +152,76 @@ ssh -i demo-key.pem ec2-user@<EC2-Public-IP>
 
 ---
 
-## 7. Deploy HTML to EC2
+## 7. Deploy HTML to EC2 using Python HTTP Server
 
-### 7.0 Create `index.html` locally
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Day 2 Training</title>
-</head>
-<body style="font-family: Arial; text-align:center; margin-top:40px;">
-  <h1>Welcome to Day 2 Training!</h1>
-  <p>This page is deployed from GitHub to EC2.</p>
-</body>
-</html>
-```
-
-### 7.1 Push to GitHub (if not done yet)
+### 7.1 Push your code to GitHub  
+If not already done:
 ```bash
 git init
-git add index.html
-git commit -m "Add index.html"
+git add .
+git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/<your-username>/day2-html-demo.git
+git remote add origin https://github.com/<your-username>/<repo-name>.git
 git push -u origin main
 ```
 
-### 7.2 SSH to EC2 and install packages
+### 7.2 SSH into your EC2 instance
+```bash
+ssh -i your-key.pem ec2-user@<EC2-Public-IP>
+```
+
+### 7.3 Update system packages
 ```bash
 sudo yum update -y
-sudo yum install -y httpd git
-sudo systemctl start httpd
-sudo systemctl enable httpd
 ```
 
-### 7.3 Deploy website from GitHub
-
-**Option A: Clone directly to `/var/www/html`**
+### 7.4 Install Git and Python 3
 ```bash
-cd /var/www/html
-sudo rm -rf *
-sudo git clone https://github.com/<your-username>/day2-html-demo.git .
-sudo chown -R apache:apache /var/www/html
-sudo chmod -R 755 /var/www/html
-sudo systemctl restart httpd
+sudo yum install -y git python3
 ```
 
-**Option B: Clone in home directory and copy**
+### 7.5 Clone your GitHub repository
+Replace `<your-username>` and `<repo-name>`:
 ```bash
-cd ~
-git clone https://github.com/<your-username>/day2-html-demo.git
-sudo cp ~/day2-html-demo/index.html /var/www/html/index.html
-sudo chown apache:apache /var/www/html/index.html
-sudo systemctl restart httpd
+cd /tmp
+git clone https://github.com/<your-username>/<repo-name>.git
 ```
 
-### Verify
+### 7.6 Navigate into the repo and start Python HTTP server
 ```bash
-sudo systemctl status httpd
-sudo tail -f /var/log/httpd/error_log
+cd /tmp/<repo-name>
+python3 -m http.server 8000
 ```
-
-> Ensure port 80 is open in Security Group inbound rules.
-
-### 7.4 Access your webpage  
-Open in browser:  
-```
-http://<EC2_Public_IP>/
-```
+> This serves files from the current directory on port 8000.
 
 ---
 
-## 8. Pull Latest Code & Redeploy
-After updating your GitHub repo, SSH to EC2 and run:
-```bash
-cd /var/www/html
-sudo git pull origin main
-sudo systemctl restart httpd
+### 7.7 Access your application  
+In your browser:
+```
+http://<EC2-Public-IP>:8000/
 ```
 
-> Fix permissions if you face errors:
+**Notes:**
+- Press `Ctrl+C` to stop the server.  
+- To run in the background:
 ```bash
-sudo chown -R apache:apache /var/www/html
-sudo chmod -R 755 /var/www/html
+nohup python3 -m http.server 8000 &
+```
+- Make sure **port 8000** is open in your EC2 Security Group.
+
+---
+
+## 8. Pull Latest Code & Restart Server
+When you update your GitHub repo:
+```bash
+cd /tmp/<repo-name>
+git pull origin main
+```
+Restart the server if needed:
+```bash
+pkill -f "python3 -m http.server"
+nohup python3 -m http.server 8000 &
 ```
 
 ---
@@ -243,7 +229,7 @@ sudo chmod -R 755 /var/www/html
 ## 9. Hands-on Exercises
 - Create and deploy your own `index.html` file to EC2  
 - Create a feature branch → make changes → open Pull Request → merge → redeploy  
-- Try deploying files using `scp` as an alternative to Git  
+- Try running the Python HTTP server on a different port (e.g., 8080)  
 
 ---
 
@@ -260,14 +246,6 @@ git push -u origin feature
 git pull origin main
 ```
 
-### Apache on EC2
-```bash
-sudo yum install httpd git -y
-sudo systemctl start httpd
-sudo systemctl enable httpd
-sudo git clone https://github.com/<user>/<repo>.git /var/www/html
-```
-
 ---
 
 ## Additional Tips & Best Practices
@@ -278,5 +256,3 @@ sudo git clone https://github.com/<user>/<repo>.git /var/www/html
 - Use Git branching and PR workflows for collaboration and code quality.  
 - Use VS Code Git integration for a smooth development experience.  
 - Document commit messages clearly and link to Jira tickets when possible.
-
----
