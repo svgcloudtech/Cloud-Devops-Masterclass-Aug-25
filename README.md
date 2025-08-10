@@ -15,7 +15,7 @@
 - **VS Code setup:** Install GitLens, Prettier, Live Server extensions  
 - **AWS EC2:** Account setup, launch instance, configure security groups and key pairs  
 - **SSH access:** Connect to EC2 using `.pem` key  
-- **Deploy HTML website:** Host a simple site on EC2 using Apache  
+- **Deploy HTML website:** Host a simple site on EC2 using python  
 - **Hands-on exercises:** Branching, pull requests, merging, and redeployment
   
 ## Folder Naming Convention
