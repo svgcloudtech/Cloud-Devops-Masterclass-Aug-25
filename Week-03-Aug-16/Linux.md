@@ -1,6 +1,6 @@
 # LINUX FUNDAMENTALS
 
-## Linux File System Structure (9:30 – 10:20)
+## Linux File System Structure
 
 ### What You'll Learn
 - Navigate the Linux directory structure
@@ -266,7 +266,7 @@ chown -R user:group directory/     # Recursive change
 chown :group file.txt              # Change group only
 ```
 
-### Practice Exercise 3
+### Practice Exercise 
 ```bash
 # Create permission practice environment
 cd /tmp
@@ -307,7 +307,7 @@ ls -l
 
 ---
 
-## User & Group Management (11:50 – 12:30)
+## User & Group Management
 
 ### What You'll Learn
 - Understand users and groups
@@ -527,7 +527,7 @@ while [ $COUNT -le 5 ]; do
 done
 ```
 
-### Practice Exercise 5
+### Practice Exercise 
 
 ```bash
 # Create script directory
@@ -561,7 +561,7 @@ chmod +x system_info.sh
 ./system_info.sh
 ```
 
-### Practice Exercise 6 - File Organizer Script
+### Practice Exercise - File Organizer Script
 
 ```bash
 # Create file organizer script
