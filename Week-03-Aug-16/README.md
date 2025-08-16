@@ -1,6 +1,6 @@
 # LINUX FUNDAMENTALS
 
-## A Brief History of Linux
+## History of Linux
 - **1991** → Linus Torvalds developed the Linux Kernel as a free alternative to Unix.  
 - **1992** → Linux became open-source under the GNU General Public License (GPL).  
 - **Today** → Linux powers servers, cloud platforms, Android devices, and DevOps tools.  
