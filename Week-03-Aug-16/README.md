@@ -6,7 +6,7 @@
 - **1992** → Linux became open-source under the GNU General Public License (GPL).  
 - **Today** → Linux powers servers, cloud platforms, Android devices, and DevOps tools.  
 
-👉 Key takeaway: Linux is popular because it is **free, open-source, secure, and stable**.  
+Key takeaway: Linux is popular because it is **free, open-source, secure, and stable**.  
 
 ---
 
@@ -24,7 +24,7 @@ Linux itself is just the **kernel**. A **distro = kernel + tools + package manag
 - Some focus on **stability** (RHEL, CentOS), others on **latest software** (Ubuntu).  
 - Choice depends on **use case** (Cloud, Container, or On-Prem Servers).  
 
-👉 In DevOps, you’ll mostly see **Ubuntu, RHEL/CentOS, and Amazon Linux**.
+In DevOps, you’ll mostly see **Ubuntu, RHEL/CentOS, and Amazon Linux**.
 
 ## Linux File System Structure
 
