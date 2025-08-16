@@ -1,5 +1,31 @@
 # LINUX FUNDAMENTALS
 
+## A Brief History of Linux
+- **1969** → Unix was created at Bell Labs.  
+- **1991** → Linus Torvalds developed the Linux Kernel as a free alternative to Unix.  
+- **1992** → Linux became open-source under the GNU General Public License (GPL).  
+- **Today** → Linux powers servers, cloud platforms, Android devices, and DevOps tools.  
+
+👉 Key takeaway: Linux is popular because it is **free, open-source, secure, and stable**.  
+
+---
+
+## Linux Distributions (Distros)
+Linux itself is just the **kernel**. A **distro = kernel + tools + package manager + desktop/server environment**.  
+
+### Common DevOps-Friendly Distros:
+- **Ubuntu/Debian** → Popular in DevOps labs, uses `apt` package manager.  
+- **CentOS / RHEL (Red Hat Enterprise Linux)** → Stable server OS, uses `yum`/`dnf`.  
+- **Amazon Linux** → Used in AWS EC2 instances.  
+- **Alpine Linux** → Lightweight, often used in Docker containers.  
+
+### Why Different Distros?
+- Package managers differ (`apt`, `yum`, `dnf`, `apk`).  
+- Some focus on **stability** (RHEL, CentOS), others on **latest software** (Ubuntu).  
+- Choice depends on **use case** (Cloud, Container, or On-Prem Servers).  
+
+👉 In DevOps, you’ll mostly see **Ubuntu, RHEL/CentOS, and Amazon Linux**.
+
 ## Linux File System Structure
 
 ### What You'll Learn
