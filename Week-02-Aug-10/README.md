@@ -15,7 +15,6 @@ This session covers essential DevOps skills including Git basics, GitHub workflo
 |-------|
 | Git basics and configuration |
 | GitHub push/pull, branching, and merge |
-| Jira project and issue management |
 | VS Code setup and Git integration |
 | AWS account setup and EC2 launch |
 | SSH into EC2 and deploy HTML site via Python HTTP server |
