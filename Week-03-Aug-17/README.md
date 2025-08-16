@@ -69,11 +69,17 @@ Back-end cloud architecture components include the following:
 
 **Applications:** Back-end apps are the software or platforms that deliver the client service requests on the front-end.
 Cloud computing service: The back-end service provides utility in cloud architecture and manages the accessibility of cloud-based resources (such as, cloud-based storage services, application development services, web services, security services, and more).
+
 **Cloud runtime:** Runtime provides the environment (operating system, hardware, memory) for executing or running services. Virtualization plays a crucial role in enabling multiple runtimes on the same server. (Read more about virtualization below.)
+
 **Cloud storage:** Cloud storage in the back-end refers to the flexible and scalable storage service and management of data stored to carry out applications.
+
 **Infrastructure:** Infrastructure consists of all the back-end resources or hardware (such as, servers, databases, CPU (central processing unit), network devices like routers and switches, graphics processing unit (GPU), and so on.) and all the software used to run and manage cloud-based services. In cloud-computing speak, the term infrastructure is sometimes confused with cloud architecture, but there’s a distinct difference. Like a blueprint for constructing a building, cloud architecture serves as the design plan for building cloud infrastructure.
+
 **Management software:** Middleware coordinates communication between the front-end and back-end in a cloud computing system. This component allows for the delivery of services in real-time to ensure smooth front-end user experiences.
+
 **Security tools:** Security tools provide the back-end security (also referred to as service-side security) for potential cyberattacks or system failures. Virtual firewalls protect web applications, prevent data loss and ensure backup and disaster recovery. Back-end components include encryption, access restriction and authentication protocols to protect data from breaches.
+
 **3. A network**
 An internet connection typically connects the front-end with the back-end functions. An intranet—a privately maintained computer network accessed only by authorized persons and limited to one institution—or an intercloud connection may also connect the back-end and front-end. A cloud network should provide high bandwidth and low latency, allowing users to continuously access their data and applications. The network must also provide agility so that access to resources can occur quickly and efficiently between servers and cloud-based environment.
 
