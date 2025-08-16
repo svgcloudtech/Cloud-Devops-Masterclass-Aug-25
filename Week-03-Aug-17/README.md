@@ -133,7 +133,6 @@ In addition to offering the control and flexibility to choose the most cost-effe
 
 ---
 
-
 # What is AWS?
 Amazon Web Services (AWS) is a comprehensive and widely adopted cloud platform provided by Amazon. It offers a wide range of cloud services including compute power, storage options, networking, databases, analytics, machine learning, and more. AWS allows businesses to scale their infrastructure as needed, offering flexibility, security, and cost-efficiency. AWS powers millions of customers globally, ranging from startups to enterprises, providing reliable and scalable cloud services.
 
