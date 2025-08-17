@@ -1,16 +1,57 @@
 
-**Overall Progress:** ✔️ 0/130 completed  
-Progress: ▓░░░░░░░░░░░ (5%)  
-
+**Overall Progress:** 0/130 completed  
 
 ---
+
+</details>
+
+<details>
+<summary><strong>DevOps Fundamentals</strong></summary>
+
+Progress: 0/4 completed
+
+- [ ] What is DevOps?
+- [ ] DevOps Lifecycle & Principles
+- [ ] Culture of Collaboration
+- [ ] CI/CD Overview
+
+</details>
+<details>
+<summary><strong>Version Control Systems</strong></summary>
+
+
+Progress: 0/4 completed
+
+
+- [ ] Git Basics
+- [ ] GitHub/GitLab Introduction
+- [ ] Branching Strategy
+- [ ] Merge Requests and Conflict Resolution
+
+</details>
+
+<details>
+<summary><strong>Linux Basics & Command Line</strong></summary>
+
+
+Progress: 0/6 completed
+
+
+- [ ] Basic Linux File System Structure
+- [ ] Essential Commands (ls, cd, mv, cp, rm, chmod, chown)
+- [ ] File Permissions & Ownership
+- [ ] Shell Scripting Basics
+- [ ] Package Managers: apt, yum
+- [ ] Networking & Process Commands
+
+</details>
+
 
 <details>
 <summary><strong>Cloud Platforms (AWS, Azure, GCP)</strong></summary>
 
 
-✔️ Progress: 0/0 completed
-![Progress](https://progress-bar.dev/0/?scale=0&title=Completed&width=300&color=green)
+Progress: 0/0 completed
 
 
 </details>
@@ -19,8 +60,7 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>AWS Fundamentals</strong></summary>
 
 
-✔️ Progress: 0/5 completed
-![Progress](https://progress-bar.dev/0/?scale=5&title=Completed&width=300&color=green)
+Progress: 0/5 completed
 
 - [ ] Overview of AWS Cloud
 - [ ] Setting up an AWS Account Core AWS Services: EC2, S3, EBS,
@@ -34,8 +74,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Azure Fundamentals</strong></summary>
 
 
-✔️ Progress: 0/4 completed
-![Progress](https://progress-bar.dev/0/?scale=4&title=Completed&width=300&color=green)
+Progress: 0/4 completed
+
 
 - [ ] Setting up Azure Account
 - [ ] Key Azure Services: VM, Blob Storage, SQL Database, VNET,
@@ -48,8 +88,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>GCP Overview</strong></summary>
 
 
-✔️ Progress: 0/3 completed
-![Progress](https://progress-bar.dev/0/?scale=3&title=Completed&width=300&color=green)
+Progress: 0/3 completed
+
 
 - [ ] Key GCP Services: Compute Engine, Cloud Storage, Cloud
 - [ ] Functions, Cloud SQL, VPC
@@ -57,36 +97,13 @@ Progress: ▓░░░░░░░░░░░ (5%)
 
 </details>
 
-<details>
-<summary><strong>SVGCloudTech DevOps Training Program</strong></summary>
-
-
-✔️ Progress: 0/0 completed
-![Progress](https://progress-bar.dev/0/?scale=0&title=Completed&width=300&color=green)
-
-
-</details>
-
-<details>
-<summary><strong>DevOps Fundamentals</strong></summary>
-
-
-✔️ Progress: 0/4 completed
-![Progress](https://progress-bar.dev/0/?scale=4&title=Completed&width=300&color=green)
-
-- [ ] What is DevOps?
-- [ ] DevOps Lifecycle & Principles
-- [ ] Culture of Collaboration
-- [ ] CI/CD Overview
-
-</details>
 
 <details>
 <summary><strong>Cloud Computing Fundamentals</strong></summary>
 
 
-✔️ Progress: 0/5 completed
-![Progress](https://progress-bar.dev/0/?scale=5&title=Completed&width=300&color=green)
+Progress: 0/5 completed
+
 
 - [ ] Overview of Cloud Computing Concepts
 - [ ] Cloud Service Models: IaaS, PaaS, SaaS
@@ -100,8 +117,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>CI/CD Pipelines</strong></summary>
 
 
-✔️ Progress: 0/6 completed
-![Progress](https://progress-bar.dev/0/?scale=6&title=Completed&width=300&color=green)
+Progress: 0/6 completed
+
 
 - [ ] Jenkins:
 - [ ] Pipeline Creation,
@@ -112,26 +129,13 @@ Progress: ▓░░░░░░░░░░░ (5%)
 
 </details>
 
-<details>
-<summary><strong>Version Control Systems</strong></summary>
-
-
-✔️ Progress: 0/4 completed
-![Progress](https://progress-bar.dev/0/?scale=4&title=Completed&width=300&color=green)
-
-- [ ] Git Basics
-- [ ] GitHub/GitLab Introduction
-- [ ] Branching Strategy
-- [ ] Merge Requests and Conflict Resolution
-
-</details>
 
 <details>
 <summary><strong>Docker & Containerization</strong></summary>
 
 
-✔️ Progress: 0/5 completed
-![Progress](https://progress-bar.dev/0/?scale=5&title=Completed&width=300&color=green)
+Progress: 0/5 completed
+
 
 - [ ] What is Docker?
 - [ ] Docker Architecture & Components
@@ -145,8 +149,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Infrastructure as Code (IaC)</strong></summary>
 
 
-✔️ Progress: 0/5 completed
-![Progress](https://progress-bar.dev/0/?scale=5&title=Completed&width=300&color=green)
+Progress: 0/5 completed
+
 
 - [ ] Introduction to Terraform
 - [ ] Writing Terraform Code (Providers, Variables, Modules)
@@ -160,8 +164,7 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Monitoring & Observability</strong></summary>
 
 
-✔️ Progress: 0/4 completed
-![Progress](https://progress-bar.dev/0/?scale=4&title=Completed&width=300&color=green)
+Progress: 0/4 completed
 
 - [ ] Prometheus Overview
 - [ ] Grafana Dashboards & Plugins
@@ -174,8 +177,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>DevSecOps & Security Tools</strong></summary>
 
 
-✔️ Progress: 0/5 completed
-![Progress](https://progress-bar.dev/0/?scale=5&title=Completed&width=300&color=green)
+Progress: 0/5 completed
+
 
 - [ ] Infrastructure Security Best Practices
 - [ ] CI/CD Security Checks
@@ -189,8 +192,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Kubernetes & Container Orchestration</strong></summary>
 
 
-✔️ Progress: 0/10 completed
-![Progress](https://progress-bar.dev/0/?scale=10&title=Completed&width=300&color=green)
+Progress: 0/10 completed
+
 
 - [ ] Kubernetes Architecture: Master, Worker, Pods, Services, etc.
 - [ ] Deploying Apps on K8s
@@ -209,8 +212,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Configuration Management</strong></summary>
 
 
-✔️ Progress: 0/4 completed
-![Progress](https://progress-bar.dev/0/?scale=4&title=Completed&width=300&color=green)
+Progress: 0/4 completed
+
 
 - [ ] Introduction to Ansible
 - [ ] Architecture: Control Node & Managed Nodes
@@ -223,8 +226,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Resume & Interview Preparation</strong></summary>
 
 
-✔️ Progress: 0/6 completed
-![Progress](https://progress-bar.dev/0/?scale=6&title=Completed&width=300&color=green)
+Progress: 0/6 completed
+
 
 - [ ] How to Build a DevOps Resume
 - [ ] What to Highlight for Different Experience Levels
@@ -239,8 +242,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Agile, Scrum & Ticketing Tools</strong></summary>
 
 
-✔️ Progress: 0/5 completed
-![Progress](https://progress-bar.dev/0/?scale=5&title=Completed&width=300&color=green)
+Progress: 0/5 completed
+
 
 - [ ] What is Scrum?
 - [ ] PI Planning, Sprint Planning, Standups
@@ -250,28 +253,13 @@ Progress: ▓░░░░░░░░░░░ (5%)
 
 </details>
 
-<details>
-<summary><strong>Linux Basics & Command Line</strong></summary>
-
-
-✔️ Progress: 0/6 completed
-![Progress](https://progress-bar.dev/0/?scale=6&title=Completed&width=300&color=green)
-
-- [ ] Basic Linux File System Structure
-- [ ] Essential Commands (ls, cd, mv, cp, rm, chmod, chown)
-- [ ] File Permissions & Ownership
-- [ ] Shell Scripting Basics
-- [ ] Package Managers: apt, yum
-- [ ] Networking & Process Commands
-
-</details>
 
 <details>
 <summary><strong>Reverse Proxy & API Gateway Tools</strong></summary>
 
 
-✔️ Progress: 0/7 completed
-![Progress](https://progress-bar.dev/0/?scale=7&title=Completed&width=300&color=green)
+Progress: 0/7 completed
+
 
 - [ ] Introduction to Reverse Proxy Concepts
 - [ ] Setting up NGINX as Reverse Proxy
@@ -287,8 +275,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Prompt Engineering for DevOps & AI Integration</strong></summary>
 
 
-✔️ Progress: 0/7 completed
-![Progress](https://progress-bar.dev/0/?scale=7&title=Completed&width=300&color=green)
+Progress: 0/7 completed
+
 
 - [ ] Introduction to Prompt Engineering
 - [ ] How to use AI tools like ChatGPT for scripting, troubleshooting,
@@ -304,8 +292,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Extras</strong></summary>
 
 
-✔️ Progress: 0/5 completed
-![Progress](https://progress-bar.dev/0/?scale=5&title=Completed&width=300&color=green)
+Progress: 0/5 completed
+
 
 - [ ] Hands-on Projects with AWS, Docker,
 - [ ] Terraform, K8s - Real-world Case Studies
@@ -319,8 +307,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Source Code Management</strong></summary>
 
 
-✔️ Progress: 0/2 completed
-![Progress](https://progress-bar.dev/0/?scale=2&title=Completed&width=300&color=green)
+Progress: 0/2 completed
+
 
 - [ ] Git – Distributed version control
 - [ ] GitHub / GitLab / Bitbucket – Code hosting with CI/CD support
@@ -331,8 +319,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>CI/CD (Continuous Integration & Deployment)</strong></summary>
 
 
-✔️ Progress: 0/5 completed
-![Progress](https://progress-bar.dev/0/?scale=5&title=Completed&width=300&color=green)
+Progress: 0/5 completed
+
 
 - [ ] Jenkins – Most popular automation server
 - [ ] GitHub Actions – Native CI/CD for GitHub
@@ -346,8 +334,7 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Infrastructure as Code (IaC)</strong></summary>
 
 
-✔️ Progress: 0/3 completed
-![Progress](https://progress-bar.dev/0/?scale=3&title=Completed&width=300&color=green)
+Progress: 0/3 completed
 
 - [ ] Terraform – Cloud provisioning (multi-cloud)
 - [ ] Pulumi – IaC using Python, JS, Go
@@ -359,8 +346,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Configuration Management</strong></summary>
 
 
-✔️ Progress: 0/2 completed
-![Progress](https://progress-bar.dev/0/?scale=2&title=Completed&width=300&color=green)
+Progress: 0/2 completed
+
 
 - [ ] Ansible – Agentless, YAML-based
 - [ ] Puppet / Chef – Declarative automation tools
@@ -371,8 +358,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Containerization</strong></summary>
 
 
-✔️ Progress: 0/2 completed
-![Progress](https://progress-bar.dev/0/?scale=2&title=Completed&width=300&color=green)
+Progress: 0/2 completed
+
 
 - [ ] Docker – Standard container runtime
 - [ ] Podman – Daemonless container engine
@@ -383,8 +370,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Container Orchestration</strong></summary>
 
 
-✔️ Progress: 0/3 completed
-![Progress](https://progress-bar.dev/0/?scale=3&title=Completed&width=300&color=green)
+Progress: 0/3 completed
+
 
 - [ ] Kubernetes – Industry-standard orchestration
 - [ ] Helm – Kubernetes package manager
@@ -396,8 +383,7 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Monitoring & Logging</strong></summary>
 
 
-✔️ Progress: 0/4 completed
-![Progress](https://progress-bar.dev/0/?scale=4&title=Completed&width=300&color=green)
+Progress: 0/4 completed
 
 - [ ] Prometheus + Grafana – Metrics and dashboards
 - [ ] ELK Stack (Elasticsearch, Logstash, Kibana) – Log analytics
@@ -410,8 +396,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>DevSecOps / Security</strong></summary>
 
 
-✔️ Progress: 0/3 completed
-![Progress](https://progress-bar.dev/0/?scale=3&title=Completed&width=300&color=green)
+Progress: 0/3 completed
+
 
 - [ ] SonarQube – Code quality and security
 - [ ] Trivy / Snyk / Aqua Security – Container security
@@ -423,8 +409,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Collaboration & Project Management</strong></summary>
 
 
-✔️ Progress: 0/3 completed
-![Progress](https://progress-bar.dev/0/?scale=3&title=Completed&width=300&color=green)
+Progress: 0/3 completed
+
 
 - [ ] Jira – Agile project tracking
 - [ ] Confluence – Team documentation
@@ -436,8 +422,8 @@ Progress: ▓░░░░░░░░░░░ (5%)
 <summary><strong>Cloud Platforms</strong></summary>
 
 
-✔️ Progress: 0/3 completed
-![Progress](https://progress-bar.dev/0/?scale=3&title=Completed&width=300&color=green)
+Progress: 0/3 completed
+
 
 - [ ] AWS – Amazon Web Services (most used)
 - [ ] Azure – Microsoft cloud platform
