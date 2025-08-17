@@ -1,7 +1,7 @@
-# DevOps Syllabus Checklist
 
-**Overall Progress:** ✔️ 0/130 completed
-![Progress](https://progress-bar.dev/0/?scale=130&title=Completed&width=400&color=blue)
+**Overall Progress:** ✔️ 0/130 completed  
+![Progress](https://progress-bar.dev/0/?scale=100&title=Completed&width=400&color=blue)  
+
 
 ---
 
