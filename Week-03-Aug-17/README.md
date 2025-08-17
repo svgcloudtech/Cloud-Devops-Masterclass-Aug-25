@@ -32,6 +32,8 @@ Cloud Computing is a technology that allows you to store and access data and app
 
 **Examples of data stored:** files, images, videos, documents.
 
+![Cloud Computing Overview](/mnt/data/cloud_diagrams/cloud_computing.png.png)
+
 ---
 
 # What is cloud architecture?
@@ -43,6 +45,8 @@ Cloud architecture defines the **front end, back end, networking, and delivery m
 
 **McKinsey predicts cloud could generate **USD 3 trillion EBITDA by 2030**.**
 
+![Cloud Architecture](/mnt/data/cloud_diagrams/cloud_architecture.png.png)
+
 ---
 
 ## Cloud architecture best practices
@@ -53,12 +57,8 @@ Cloud architecture defines the **front end, back end, networking, and delivery m
 ---
 
 ## The benefits of cloud architecture
-- **Custom migration strategies** (migrate DBs/apps).  
-- **Accelerate modernization** (Kubernetes, self-service).  
-- **Speed time-to-market** (Agile + DevOps).  
-- **Innovation** (AI, ML, Quantum, Blockchain, IoT).  
-- **Resiliency** (DR, uptime).  
-- **Compliance & Security** (encryption, regulations).  
+
+![Benefits](/mnt/data/cloud_diagrams/benefits.png.png)
 
 ---
 
@@ -67,6 +67,8 @@ Cloud architecture defines the **front end, back end, networking, and delivery m
 2. **Back-end** – servers, storage, APIs, middleware, security tools.  
 3. **Network** – internet, intranet, CDNs, SDN, load balancers.  
 4. **Delivery models** – IaaS, PaaS, SaaS (and FaaS, BPaaS, Serverless).  
+
+![Components](/mnt/data/cloud_diagrams/components.png.png)
 
 ---
 
@@ -81,6 +83,8 @@ Cloud architecture defines the **front end, back end, networking, and delivery m
 - **Private Cloud** → dedicated for one org.  
 - **Hybrid Cloud** → mix of public/private/on-prem.  
 - **Hybrid Multicloud** → multi-provider flexibility.  
+
+![Deployment Models](/mnt/data/cloud_diagrams/deployment.png.png)
 
 ---
 
@@ -97,6 +101,8 @@ It provides compute, storage, databases, networking, analytics, ML, AI, IoT, and
 - **Global Reach** → 37 regions, 99+ availability zones.  
 - **Robust Security** → encryption, compliance, IAM.  
 
+![AWS Services](/mnt/data/cloud_diagrams/aws_services.png.png)
+
 ---
 
 ## AWS Cloud Overview
@@ -104,6 +110,8 @@ It provides compute, storage, databases, networking, analytics, ML, AI, IoT, and
 - **37 Regions, 99+ AZs, 600+ Edge Locations.**  
 - Local Zones & Wavelength Zones (low latency).  
 - Used by startups, enterprises, governments.  
+
+![AWS Infrastructure](/mnt/data/cloud_diagrams/aws_infra.png.png)
 
 ---
 
@@ -114,6 +122,8 @@ It provides compute, storage, databases, networking, analytics, ML, AI, IoT, and
 - **Policies:** JSON docs for allow/deny.  
 - **Best Practices:** Least privilege, MFA, rotate keys.  
 
+![IAM](/mnt/data/cloud_diagrams/iam.png.png)
+
 ---
 
 ## S3 Buckets: Create, Upload, Manage
@@ -122,6 +132,8 @@ It provides compute, storage, databases, networking, analytics, ML, AI, IoT, and
 - **Demo:** Create bucket, upload file, enable encryption.  
 - **Management:** Organize with prefixes, event notifications.  
 
+![S3 Buckets](/mnt/data/cloud_diagrams/s3.png.png)
+
 ---
 
 ## S3 Versioning & Lifecycle Rules
@@ -129,6 +141,8 @@ It provides compute, storage, databases, networking, analytics, ML, AI, IoT, and
 - **Lifecycle Rules:** Transition to Glacier, delete old versions.  
 - **Demo:** Archive objects after 30 days.  
 - **Outcome:** Cost optimization + data protection.  
+
+![S3 Versioning & Lifecycle](/mnt/data/cloud_diagrams/s3_versioning.png.png)
 
 ---
 
