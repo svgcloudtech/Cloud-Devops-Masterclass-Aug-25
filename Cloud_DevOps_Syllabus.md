@@ -1,6 +1,6 @@
 
 **Overall Progress:** ✔️ 0/130 completed  
-![Progress](https://progress-bar.dev/0/?scale=100&title=Completed&width=400&color=blue)  
+Progress: ▓░░░░░░░░░░░ (5%)  
 
 
 ---
