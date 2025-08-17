@@ -5,7 +5,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 1. [Introduction to Cloud Computing](#introduction-to-cloud-computing)
 2. [What is Cloud Architecture?](#what-is-cloud-architecture)
    - [Cloud Architecture Best Practices](#cloud-architecture-best-practices)
@@ -41,7 +41,7 @@ Cloud architecture defines the **front end, back end, networking, and delivery m
 - **Vendors:** AWS, Azure, Google Cloud, IBM Cloud, VMware.  
 - **Business Value:** Lower infra costs, high scalability, faster innovation.  
 
-👉 McKinsey predicts cloud could generate **USD 3 trillion EBITDA by 2030**.
+**McKinsey predicts cloud could generate **USD 3 trillion EBITDA by 2030**.**
 
 ---
 
