@@ -32,7 +32,7 @@ Cloud Computing is a technology that allows you to store and access data and app
 
 **Examples of data stored:** files, images, videos, documents.
 
-![Cloud Computing Overview](https://github.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/tree/main/Week-03-Aug-17/cloud_diagrams/cloud_computing.png.png)
+![Cloud Computing Overview](https://raw.githubusercontent.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/main/Week-03-Aug-17/cloud_diagrams/cloud_computing.png.png)
 
 ---
 
@@ -45,7 +45,7 @@ Cloud architecture defines the **front end, back end, networking, and delivery m
 
 **McKinsey predicts cloud could generate **USD 3 trillion EBITDA by 2030**.**
 
-![Cloud Architecture](https://github.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/tree/main/Week-03-Aug-17/cloud_diagrams/cloud_architecture.png.png)
+![Cloud Architecture](https://raw.githubusercontent.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/main/Week-03-Aug-17/cloud_diagrams/cloud_architecture.png.png)
 
 ---
 
@@ -58,7 +58,7 @@ Cloud architecture defines the **front end, back end, networking, and delivery m
 
 ## The benefits of cloud architecture
 
-![Benefits](https://github.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/tree/main/Week-03-Aug-17/cloud_diagrams/benefits.png.png)
+![Benefits](https://raw.githubusercontent.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/main/Week-03-Aug-17/cloud_diagrams/benefits.png.png)
 
 ---
 
@@ -68,7 +68,7 @@ Cloud architecture defines the **front end, back end, networking, and delivery m
 3. **Network** – internet, intranet, CDNs, SDN, load balancers.  
 4. **Delivery models** – IaaS, PaaS, SaaS (and FaaS, BPaaS, Serverless).  
 
-![Components](https://github.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/tree/main/Week-03-Aug-17/cloud_diagrams/components.png.png)
+![Components](https://raw.githubusercontent.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/main/Week-03-Aug-17/cloud_diagrams/components.png.png)
 
 ---
 
@@ -84,7 +84,7 @@ Cloud architecture defines the **front end, back end, networking, and delivery m
 - **Hybrid Cloud** → mix of public/private/on-prem.  
 - **Hybrid Multicloud** → multi-provider flexibility.  
 
-![Deployment Models](https://github.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/tree/main/Week-03-Aug-17/cloud_diagrams/deployment.png.png)
+![Deployment Models](https://raw.githubusercontent.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/main/Week-03-Aug-17/cloud_diagrams/deployment.png.png)
 
 ---
 
@@ -101,7 +101,7 @@ It provides compute, storage, databases, networking, analytics, ML, AI, IoT, and
 - **Global Reach** → 37 regions, 99+ availability zones.  
 - **Robust Security** → encryption, compliance, IAM.  
 
-![AWS Services](https://github.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/tree/main/Week-03-Aug-17/cloud_diagrams/aws_services.png.png)
+![AWS Services](https://raw.githubusercontent.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/main/Week-03-Aug-17/cloud_diagrams/aws_services.png.png)
 
 ---
 
@@ -111,7 +111,7 @@ It provides compute, storage, databases, networking, analytics, ML, AI, IoT, and
 - Local Zones & Wavelength Zones (low latency).  
 - Used by startups, enterprises, governments.  
 
-![AWS Infrastructure](https://github.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/tree/main/Week-03-Aug-17/cloud_diagrams/aws_infra.png.png)
+![AWS Infrastructure](https://raw.githubusercontent.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/main/Week-03-Aug-17/cloud_diagrams/aws_infra.png.png)
 
 ---
 
@@ -122,7 +122,7 @@ It provides compute, storage, databases, networking, analytics, ML, AI, IoT, and
 - **Policies:** JSON docs for allow/deny.  
 - **Best Practices:** Least privilege, MFA, rotate keys.  
 
-![IAM](https://github.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/tree/main/Week-03-Aug-17/cloud_diagrams/iam.png.png)
+![IAM](https://raw.githubusercontent.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/main/Week-03-Aug-17/cloud_diagrams/iam.png.png)
 
 ---
 
@@ -132,7 +132,7 @@ It provides compute, storage, databases, networking, analytics, ML, AI, IoT, and
 - **Demo:** Create bucket, upload file, enable encryption.  
 - **Management:** Organize with prefixes, event notifications.  
 
-![S3 Buckets](https://github.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/tree/main/Week-03-Aug-17/cloud_diagrams/s3.png.png)
+![S3 Buckets](https://raw.githubusercontent.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/main/Week-03-Aug-17/cloud_diagrams/s3.png.png)
 
 ---
 
@@ -142,7 +142,7 @@ It provides compute, storage, databases, networking, analytics, ML, AI, IoT, and
 - **Demo:** Archive objects after 30 days.  
 - **Outcome:** Cost optimization + data protection.  
 
-![S3 Versioning & Lifecycle](https://github.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/tree/main/Week-03-Aug-17/cloud_diagrams/s3_versioning.png.png)
+![S3 Versioning & Lifecycle](https://raw.githubusercontent.com/svgcloudtech/Cloud-Devops-Masterclass-Aug-25/main/Week-03-Aug-17/cloud_diagrams/s3_versioning.png.png)
 
 ---
 
