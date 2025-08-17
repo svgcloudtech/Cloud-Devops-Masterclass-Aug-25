@@ -8,12 +8,15 @@
 <details>
 <summary><strong>DevOps Fundamentals</strong></summary>
 
-Progress: 0/4 completed
+**Progress:** 4/4 completed  
 
-- [ ] What is DevOps?
-- [ ] DevOps Lifecycle & Principles
-- [ ] Culture of Collaboration
-- [ ] CI/CD Overview
+- [x] What is DevOps?  
+- [x] DevOps Lifecycle & Principles  
+- [x] Culture of Collaboration  
+- [x] CI/CD Overview  
+
+</details>
+
 
 </details>
 <details>
