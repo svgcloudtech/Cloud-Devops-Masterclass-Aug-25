@@ -23,13 +23,13 @@
 <summary><strong>Version Control Systems</strong></summary>
 
 
-Progress: 0/4 completed
+Progress: 4/4 completed
 
 
-- [ ] Git Basics
-- [ ] GitHub/GitLab Introduction
-- [ ] Branching Strategy
-- [ ] Merge Requests and Conflict Resolution
+- [x] Git Basics
+- [x] GitHub/GitLab Introduction
+- [x] Branching Strategy
+- [x] Merge Requests and Conflict Resolution
 
 </details>
 
@@ -37,15 +37,15 @@ Progress: 0/4 completed
 <summary><strong>Linux Basics & Command Line</strong></summary>
 
 
-Progress: 0/6 completed
+Progress: 6/6 completed
 
 
-- [ ] Basic Linux File System Structure
-- [ ] Essential Commands (ls, cd, mv, cp, rm, chmod, chown)
-- [ ] File Permissions & Ownership
-- [ ] Shell Scripting Basics
-- [ ] Package Managers: apt, yum
-- [ ] Networking & Process Commands
+- [x] Basic Linux File System Structure
+- [x] Essential Commands (ls, cd, mv, cp, rm, chmod, chown)
+- [x] File Permissions & Ownership
+- [x] Shell Scripting Basics
+- [x] Package Managers: apt, yum
+- [x] Networking & Process Commands
 
 </details>
 
