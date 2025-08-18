@@ -10,7 +10,7 @@ Each section includes **hands-on instructions**, **sample policies**, and **best
 ## Table of Contents
 1. [IAM Fundamentals](#iam-fundamentals)
    - [Create an IAM User](#create-an-iam-user)
-   - [User Credentials (Console & CLI)](#user-credentials-console--cli)
+   - [User Credentials (Console)](#user-credentials-console)
    - [Groups and Policies](#groups-and-policies)
    - [IAM Roles](#iam-roles)
    - [Policies and Permissions](#policies-and-permissions)
@@ -47,7 +47,7 @@ Each section includes **hands-on instructions**, **sample policies**, and **best
 
 ---
 
-## User Credentials (Console & CLI)
+## User Credentials (Console)
 - Console login URL: `https://<account-id>.signin.aws.amazon.com/console`
 
 ---
