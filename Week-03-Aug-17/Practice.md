@@ -65,7 +65,10 @@ Learn how to create a new **IAM User** in AWS Management Console, assign permiss
 
 ## 📚 References
 - [What is AWS?](https://aws.amazon.com/what-is-aws/)  
-- [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)  
-- [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?pg=localzones&sec=hs)  
+- [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+- [Create IAM Users in Console](https://us-east-1.console.aws.amazon.com/iam/home?region=ap-south-1#/users/create)  
+- [Permissions Required to Access IAM Resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_permissions-required.html)  
+
+
 
 ---
