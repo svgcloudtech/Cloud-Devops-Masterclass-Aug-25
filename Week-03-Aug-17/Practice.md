@@ -1,11 +1,11 @@
 # AWS IAM User Creation Guide
 
-## 🎯 Objective
+## Objective
 Learn how to create a new **IAM User** in AWS Management Console, assign permissions, and enable console access.
 
 ---
 
-## 📌 Steps to Create an IAM User
+## Steps to Create an IAM User
 
 ### Step 1: Open IAM Service
 1. Login to AWS Console.  
