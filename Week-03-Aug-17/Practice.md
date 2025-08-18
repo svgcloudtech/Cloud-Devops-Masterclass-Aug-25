@@ -142,14 +142,6 @@ Restrict user to **read-only S3**:
 
 ---
 
-## Upload & Download Objects
-```bash
-aws s3 cp file.txt s3://student-bucket-yourname/
-aws s3 cp s3://student-bucket-yourname/file.txt ./file.txt
-```
-
----
-
 ## Public vs Private Buckets
 - By default → **private**.  
 - To make public:
@@ -194,13 +186,6 @@ Public read policy:
 Use **S3 Object Lock**:
 - **Governance mode** or **Compliance mode**.  
 - Prevent object deletion until retention period expires.
-
----
-
-## Delete a Bucket
-```bash
-aws s3 rb s3://student-bucket-yourname --force
-```
 
 ---
 
