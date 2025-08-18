@@ -13,7 +13,7 @@ Learn how to create a new **IAM User** in AWS Management Console, assign permiss
 3. Click on **IAM** → then go to **Users**.  
 4. Click on **Create User** button.  
 
-![Search IAM and Create User](IMA%20User%20creation1.png)
+<img width="1421" height="682" alt="IAM User create2" src="https://github.com/user-attachments/assets/0a0a4e75-e06a-489e-b75e-1e9665e1a71f" />
 
 ---
 
@@ -27,7 +27,7 @@ Learn how to create a new **IAM User** in AWS Management Console, assign permiss
 4. Select **Require password reset** at first login (Best practice).  
 5. Click **Next**.  
 
-![Specify User Details](IAM%20User%20create2.png)
+<img width="1421" height="682" alt="IAM User create2" src="https://github.com/user-attachments/assets/58a8d6e3-6835-495c-8ffa-9e4aca0d9d04" />
 
 ---
 
@@ -41,6 +41,8 @@ Learn how to create a new **IAM User** in AWS Management Console, assign permiss
 
 3. Click **Next**.  
 
+<img width="1421" height="682" alt="IAM User create2" src="https://github.com/user-attachments/assets/160dafa4-0e7a-4b54-8cea-2a7d89a4a618" />
+
 ---
 
 ### Step 4: Review and Create
@@ -48,7 +50,7 @@ Learn how to create a new **IAM User** in AWS Management Console, assign permiss
 2. Confirm policies → `AdministratorAccess` + `IAMUserChangePassword`.  
 3. Click on **Create User**.  
 
-![Review and Create User](IAM%20User%20Creation.png)
+
 
 ---
 
@@ -58,35 +60,6 @@ Learn how to create a new **IAM User** in AWS Management Console, assign permiss
 3. Share securely with the user.  
 
 ⚠️ **Never share credentials over email/chat in plain text.** Use secure channels.
-
----
-
-## 🧑‍🏫 Trainer Notes (How to Explain in Class)
-
-- **Introduction Dialogue**:  
-  *“IAM (Identity and Access Management) allows us to securely manage access to AWS resources. Instead of using the root account, we create users with controlled access.”*
-
-- **When entering User Name**:  
-  *“Here we give the user an identity. Think of this as giving an employee an ID badge in the office.”*
-
-- **When selecting Console Access**:  
-  *“If the user needs to login to AWS Console via browser, we check this option. Otherwise, for developers using CLI, we provide programmatic access.”*
-
-- **When attaching policies**:  
-  *“Policies are like job roles. An Admin policy gives full rights, but in production we follow the principle of least privilege.”*
-
-- **When clicking Create**:  
-  *“Now AWS generates the credentials. Always save the CSV and hand it to the user securely.”*
-
----
-
-## 🛠 Demo Guide for Trainers
-
-1. Open AWS Console → IAM → Users.  
-2. Create a demo user `student-demo`.  
-3. Assign **AdministratorAccess** for hands-on session.  
-4. Ask students to login with the credentials.  
-5. After demo, **delete the user** to avoid security risks.  
 
 ---
 
