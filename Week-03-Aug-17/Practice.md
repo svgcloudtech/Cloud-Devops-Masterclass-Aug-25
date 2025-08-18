@@ -49,12 +49,6 @@ Each section includes **hands-on instructions**, **sample policies**, and **best
 
 ## User Credentials (Console & CLI)
 - Console login URL: `https://<account-id>.signin.aws.amazon.com/console`
-- For CLI: configure with `aws configure`
-
-```bash
-aws configure
-# Enter Access Key, Secret Key, Region, Output Format
-```
 
 ---
 
