@@ -98,7 +98,7 @@ Each snapshot contains all of the information that is needed to restore your dat
 
 # Elastic Load Balancer (ELB)
 Elastic Load Balancing automatically distributes your incoming traffic across multiple targets, such as EC2 instances, containers, and IP addresses, in one or more Availability Zones. It monitors the health of its registered targets, and routes traffic only to the healthy targets. Elastic Load Balancing scales your load balancer capacity automatically in response to changes in incoming traffic.
-
+![alt text](image-6.png)
 # Load balancer benefits
 Elastic Load Balancing (ELB) is a service provided by Amazon Web Services (AWS) that automatically distributes incoming application traffic across multiple targets—such as Amazon EC2 instances, containers, IP addresses, and Lambda functions—in one or more Availability Zones (AZs).
 
@@ -122,7 +122,8 @@ Features:
 - SSL offloading
 - URL rewriting and redirects
 - Authentication (Cognito or OIDC)
-
+![alt text](image-4.png)
+![alt text](image-5.png)
 **2. Network Load Balancer (NLB)**
 
 Layer: 4 (Transport Layer - TCP, UDP, TLS)
@@ -136,7 +137,7 @@ Features:
 - TLS termination
 - Static IP or Elastic IP
 - Operates at the connection level
-
+![alt text](image-7.png)
 **3. Gateway Load Balancer (GWLB)**
 
 Layer: 3/4 (Network Layer)
@@ -159,3 +160,113 @@ Features:
 - Basic load balancing for HTTP/HTTPS and TCP
 - Limited compared to ALB/NLB
 - AWS recommends migrating to ALB or NLB
+
+# AWS Security Best Practices
+
+## 1. EC2 Basics – Best Practices
+
+### Security
+- Use **IAM roles** instead of hardcoding credentials inside EC2.
+- Restrict **SSH access** using Security Groups (only allow trusted IPs).
+- Use **EC2 Instance Connect** or key pair authentication for secure access.
+- Disable root SSH access and enforce key-based authentication.
+
+### Cost Optimization
+- Right-size instances based on actual usage metrics.
+- Use **Spot Instances** for stateless or non-critical workloads.
+- Schedule **start/stop** for development and testing environments.
+- Leverage **Reserved Instances** or **Savings Plans** for predictable usage.
+
+### Availability & Resilience
+- Deploy instances across multiple **Availability Zones**.
+- Use **Auto Scaling Groups** for self-healing infrastructure.
+- Monitor instances with **CloudWatch alarms** and automate actions.
+
+### Performance
+- Select appropriate **instance families** based on workload type.
+- Use **Enhanced Networking (ENA)** for high throughput and low latency.
+
+---
+
+## 2. EBS Volumes & Snapshots – Best Practices
+
+### Data Protection
+- Enable **encryption** at rest using AWS KMS.
+- Take **regular snapshots** for backup and recovery.
+- Use **cross-region snapshots** for disaster recovery needs.
+
+### Performance
+- Use **Provisioned IOPS (io2/io1)** volumes for high-performance needs.
+- Choose the right volume type for the workload (e.g., gp3, st1, sc1).
+
+### Cost Management
+- **Delete unused snapshots** regularly.
+- Use **Amazon Data Lifecycle Manager** to automate snapshot creation and retention.
+- Avoid over-provisioning volume size and IOPS.
+
+### Operational Efficiency
+- Tag volumes and snapshots for identification, cost tracking, and automation.
+- Monitor EBS performance using **CloudWatch** metrics.
+
+---
+
+## 3. Elastic Load Balancer (ELB) – Best Practices
+
+### Security
+- Use **HTTPS listeners** with valid **SSL certificates** from ACM.
+- Limit access with **security groups** scoped to required ports and IPs.
+- Enable **Access Logs** for traffic auditing and analysis.
+
+### High Availability
+- Register targets in **multiple Availability Zones**.
+- Use **health checks** to remove unhealthy instances automatically.
+- Enable **cross-zone load balancing** for even traffic distribution.
+
+### Performance
+- Choose the correct ELB type based on use case:
+  - ALB for Layer 7 (HTTP/HTTPS)
+  - NLB for Layer 4 (TCP/UDP)
+- Optimize **deregistration delay** to minimize disruptions during scale-in.
+
+### Monitoring & Logging
+- Enable **CloudWatch metrics** and set alarms.
+- Use **AWS WAF** with ALB to protect web apps from common attacks (e.g., SQL injection).
+
+---
+
+## 4. Auto Scaling Basics – Best Practices
+
+### Scaling Configuration
+- Use **Target Tracking Policies** for automated, metric-driven scaling.
+- Apply **Step Scaling** for more control over scaling thresholds.
+- Use **Scheduled Scaling** to prepare for known demand patterns.
+
+### Launch Templates
+- Use **Launch Templates** (not older Launch Configs) for version control and flexibility.
+- Reference the latest **secure and optimized AMIs**.
+
+### Health & Recovery
+- Enable both **EC2 and ELB health checks**.
+- Use **lifecycle hooks** to run scripts during instance launch or termination.
+- Configure **termination policies** to prevent removal of important instances.
+
+### Distribution & Availability
+- Deploy instances across multiple **Availability Zones**.
+- Pair Auto Scaling with **ELB** for automatic traffic distribution to healthy instances.
+
+### Monitoring
+- Monitor key metrics like:
+  - `GroupDesiredCapacity`
+  - `GroupInServiceInstances`
+  - `CPUUtilization`
+  - `GroupMaxSize`
+- Use **CloudWatch Alarms** to trigger notifications or scaling actions.
+
+---
+
+## References
+
+- [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/)
+- [Amazon EBS Documentation](https://docs.aws.amazon.com/ebs/)
+- [Elastic Load Balancing Documentation](https://docs.aws.amazon.com/elasticloadbalancing/)
+- [Auto Scaling Documentation](https://docs.aws.amazon.com/autoscaling/)
