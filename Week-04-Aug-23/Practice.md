@@ -29,7 +29,7 @@ aws ec2 run-instances   --image-id ami-xxxxxxxx   --count 1   --instance-type t2
 
 ---
 
-## 2️⃣ Manage EBS Volumes and Snapshots
+## Manage EBS Volumes and Snapshots
 
 ### Console Steps:
 1. Go to **EC2 → Volumes → Create Volume**
