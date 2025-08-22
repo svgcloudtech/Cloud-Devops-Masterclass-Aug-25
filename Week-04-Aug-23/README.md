@@ -121,8 +121,8 @@ Features:
 - SSL offloading
 - URL rewriting and redirects
 - Authentication (Cognito or OIDC)
-![alt text](image/image-4.png)
-![alt text](image/image-5.png)
+![alt text](images/image-4.png)
+![alt text](images/image-5.png)
 **2. Network Load Balancer (NLB)**
 
 Layer: 4 (Transport Layer - TCP, UDP, TLS)
@@ -136,7 +136,7 @@ Features:
 - TLS termination
 - Static IP or Elastic IP
 - Operates at the connection level
-![alt text](image/image-7.png)
+![alt text](images/image-7.png)
 **3. Gateway Load Balancer (GWLB)**
 
 Layer: 3/4 (Network Layer)
