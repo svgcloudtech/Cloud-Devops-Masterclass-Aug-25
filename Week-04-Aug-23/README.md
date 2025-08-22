@@ -4,7 +4,7 @@
 
 An EC2 instance is a virtual server in the AWS Cloud. When you launch an EC2 instance, the instance type that you specify determines the hardware available to your instance. Each instance type offers a different balance of compute, memory, network, and storage resources. [For more information,](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html)
 
-Week-04-Aug-23/images/image.png
+![alt text](images/image.png)
 
 # Features of Amazon EC2
 
