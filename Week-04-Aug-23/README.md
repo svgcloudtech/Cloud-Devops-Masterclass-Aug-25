@@ -43,8 +43,7 @@ Amazon EC2 provides you with flexible, cost effective, and easy-to-use data stor
   **-Amazon S3**
 **File storage**
   **-Amazon EFS**
-![alt text](image-2.png)
-
+![alt text](images/image-2.png)
 
 **Instance store volumes**
 Storage volumes for temporary data that is deleted when you stop, hibernate, or terminate your instance.
@@ -66,7 +65,7 @@ Amazon EC2 Auto Scaling helps you ensure that you have the correct number of Ama
 
 For example, the following Auto Scaling group has a minimum size of four instances, a desired capacity of six instances, and a maximum size of twelve instances. The scaling policies that you define adjust the number of instances, within your minimum and maximum number of instances, based on the criteria that you specify.
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 # Features of Amazon EC2 Auto Scaling
 
@@ -98,7 +97,7 @@ Each snapshot contains all of the information that is needed to restore your dat
 
 # Elastic Load Balancer (ELB)
 Elastic Load Balancing automatically distributes your incoming traffic across multiple targets, such as EC2 instances, containers, and IP addresses, in one or more Availability Zones. It monitors the health of its registered targets, and routes traffic only to the healthy targets. Elastic Load Balancing scales your load balancer capacity automatically in response to changes in incoming traffic.
-![alt text](image-6.png)
+![alt text](image/image-6.png)
 # Load balancer benefits
 Elastic Load Balancing (ELB) is a service provided by Amazon Web Services (AWS) that automatically distributes incoming application traffic across multiple targets—such as Amazon EC2 instances, containers, IP addresses, and Lambda functions—in one or more Availability Zones (AZs).
 
@@ -122,8 +121,8 @@ Features:
 - SSL offloading
 - URL rewriting and redirects
 - Authentication (Cognito or OIDC)
-![alt text](image-4.png)
-![alt text](image-5.png)
+![alt text](image/image-4.png)
+![alt text](image/image-5.png)
 **2. Network Load Balancer (NLB)**
 
 Layer: 4 (Transport Layer - TCP, UDP, TLS)
@@ -137,7 +136,7 @@ Features:
 - TLS termination
 - Static IP or Elastic IP
 - Operates at the connection level
-![alt text](image-7.png)
+![alt text](image/image-7.png)
 **3. Gateway Load Balancer (GWLB)**
 
 Layer: 3/4 (Network Layer)
