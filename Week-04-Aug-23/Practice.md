@@ -1,6 +1,8 @@
 # Week 4 – Practice Guide
+
 This guide is designed to practice AWS concepts hands-on with both **Console** and **CLI** instructions.  
 Topics include EC2, EBS, ELB, Auto Scaling, Security Best Practices
+
 ---
 
 # Day 1 – EC2, EBS, ELB, Auto Scaling, Security
