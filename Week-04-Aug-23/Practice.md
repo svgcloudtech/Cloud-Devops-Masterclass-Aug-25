@@ -1,7 +1,6 @@
-# Week 4 – Student Practice Guide
-This guide is designed for students to practice AWS concepts hands-on with both **Console** and **CLI** instructions.  
-Topics include EC2, EBS, ELB, Auto Scaling, Security Best Practices, CloudWatch, and CloudTrail.
-
+# Week 4 – Practice Guide
+This guide is designed to practice AWS concepts hands-on with both **Console** and **CLI** instructions.  
+Topics include EC2, EBS, ELB, Auto Scaling, Security Best Practices
 ---
 
 # Day 1 – EC2, EBS, ELB, Auto Scaling, Security
@@ -20,6 +19,11 @@ Topics include EC2, EBS, ELB, Auto Scaling, Security Best Practices, CloudWatch,
 
 ### CLI Steps:
 ```bash
+$ aws configure
+AWS Access Key ID [None]: accesskey
+AWS Secret Access Key [None]: secretkey
+Default region name [None]: us-west-2
+Default output format [None]:
 aws ec2 run-instances   --image-id ami-xxxxxxxx   --count 1   --instance-type t2.micro   --key-name student-key   --security-group-ids sg-xxxxxxx   --subnet-id subnet-xxxxxxx
 ```
 
