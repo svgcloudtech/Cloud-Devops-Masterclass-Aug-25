@@ -121,8 +121,11 @@ Features:
 - SSL offloading
 - URL rewriting and redirects
 - Authentication (Cognito or OIDC)
+# OSI Layers
 ![alt text](images/image-4.png)
+# Application Load Balancer
 ![alt text](images/image-5.png)
+
 **2. Network Load Balancer (NLB)**
 
 Layer: 4 (Transport Layer - TCP, UDP, TLS)
