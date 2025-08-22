@@ -104,7 +104,7 @@ Elastic Load Balancing (ELB) is a service provided by Amazon Web Services (AWS) 
 
 ELB improves fault tolerance, availability, and scalability of applications by balancing the load and ensuring no single server bears too much traffic.
 
-# Types of Elastic Load Balancers in AWS
+# [Types of Elastic Load Balancers in AWS](https://aws.amazon.com/elasticloadbalancing/features/)
 
 There are four main types of Elastic Load Balancers:
 
