@@ -140,6 +140,7 @@ Features:
 - Static IP or Elastic IP
 - Operates at the connection level
 ![alt text](images/image-7.png)
+
 **3. Gateway Load Balancer (GWLB)**
 
 Layer: 3/4 (Network Layer)
