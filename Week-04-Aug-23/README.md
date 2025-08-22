@@ -108,70 +108,54 @@ ELB improves fault tolerance, availability, and scalability of applications by b
 
 There are four main types of Elastic Load Balancers:
 
-1. Application Load Balancer (ALB)
+**1. Application Load Balancer (ALB)**
 
 Layer: 7 (Application Layer - HTTP/HTTPS)
 Use Case: Web applications, microservices, and containerized applications (e.g., ECS/EKS)
 
 Features:
 
-Path-based routing (e.g., /api/* → service A, /images/* → service B)
+- Path-based routing (e.g., /api/* → service A, /images/* → service B)
+- Host-based routing (e.g., app.example.com → service A)
+- Supports WebSockets and HTTP/2
+- Native integration with ECS (Docker containers)
+- SSL offloading
+- URL rewriting and redirects
+- Authentication (Cognito or OIDC)
 
-Host-based routing (e.g., app.example.com → service A)
-
-Supports WebSockets and HTTP/2
-
-Native integration with ECS (Docker containers)
-
-SSL offloading
-
-URL rewriting and redirects
-
-Authentication (Cognito or OIDC)
-
-2. Network Load Balancer (NLB)
+**2. Network Load Balancer (NLB)**
 
 Layer: 4 (Transport Layer - TCP, UDP, TLS)
 Use Case: High-performance applications needing ultra-low latency and high throughput
 
 Features:
 
-Handles millions of requests per second
+- Handles millions of requests per second
+- Extremely fast, optimized for sudden traffic spikes
+- Preserves client IP
+- TLS termination
+- Static IP or Elastic IP
+- Operates at the connection level
 
-Extremely fast, optimized for sudden traffic spikes
-
-Preserves client IP
-
-TLS termination
-
-Static IP or Elastic IP
-
-Operates at the connection level
-
-3. Gateway Load Balancer (GWLB)
+**3. Gateway Load Balancer (GWLB)**
 
 Layer: 3/4 (Network Layer)
 Use Case: For deploying, scaling, and managing third-party virtual appliances like firewalls, intrusion detection, etc.
 
 Features:
 
-Integrates with AWS Firewall and other appliances
+- Integrates with AWS Firewall and other appliances
+- Transparent traffic inspection
+- Supports GENEVE encapsulation
+- Combines with VPC Traffic Mirroring for advanced monitoring/security
 
-Transparent traffic inspection
-
-Supports GENEVE encapsulation
-
-Combines with VPC Traffic Mirroring for advanced monitoring/security
-
-4. Classic Load Balancer (CLB)
+**4. Classic Load Balancer (CLB)**
 
 Layer: 4 & 7 (Legacy)
 Use Case: Applications built within the EC2-Classic network (deprecated in new setups)
 
 Features:
 
-Basic load balancing for HTTP/HTTPS and TCP
-
-Limited compared to ALB/NLB
-
-AWS recommends migrating to ALB or NLB
+- Basic load balancing for HTTP/HTTPS and TCP
+- Limited compared to ALB/NLB
+- AWS recommends migrating to ALB or NLB
