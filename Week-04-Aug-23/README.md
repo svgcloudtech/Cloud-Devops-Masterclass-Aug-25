@@ -36,6 +36,7 @@ Persistent storage volumes for your data using Amazon Elastic Block Store (Amazo
 
 # Storage options for your Amazon EC2 instances
 Amazon EC2 provides you with flexible, cost effective, and easy-to-use data storage options for your instances. Each option has a unique combination of performance and durability. These storage options can be used independently or in combination to suit your requirements.
+
 **Block storage**
   **-Amazon EBS**
   **-Instance store temporary block storage for EC2 instances**
