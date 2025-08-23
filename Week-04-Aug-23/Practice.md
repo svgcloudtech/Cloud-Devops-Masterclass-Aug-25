@@ -231,23 +231,6 @@ Delete in this order to avoid “in use” errors:
 
 ---
 
-## Optional: Tiny CLI checks
-
-```bash
-# List running EC2 instances in your region
-aws ec2 describe-instances --filters Name=instance-state-name,Values=running \
-  --query "Reservations[].Instances[].[InstanceId,State.Name,Placement.AvailabilityZone,Tags[?Key=='aws:autoscaling:groupName'].Value|[0]]" \
-  --output table
-
-# List S3 buckets (if you enabled S3 for ALB access logs)
-aws s3 ls
-
-# Show your target group health
-aws elbv2 describe-target-health --target-group-arn <TG_ARN> --query "TargetHealthDescriptions[].TargetHealth.State"
-```
-
----
-
 ### What you should be able to do by the end
 
 - Explain ALB vs SG roles
