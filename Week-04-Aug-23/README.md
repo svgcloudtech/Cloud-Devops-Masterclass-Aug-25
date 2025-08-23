@@ -108,7 +108,9 @@ Each snapshot contains all of the information that is needed to restore your dat
 
 # Elastic Load Balancer (ELB)
 Elastic Load Balancing automatically distributes your incoming traffic across multiple targets, such as EC2 instances, containers, and IP addresses, in one or more Availability Zones. It monitors the health of its registered targets, and routes traffic only to the healthy targets. Elastic Load Balancing scales your load balancer capacity automatically in response to changes in incoming traffic.
-![alt text](image/image-6.png)
+
+![alt text](images/image-6.png)
+
 # Load balancer benefits
 Elastic Load Balancing (ELB) is a service provided by Amazon Web Services (AWS) that automatically distributes incoming application traffic across multiple targets—such as Amazon EC2 instances, containers, IP addresses, and Lambda functions—in one or more Availability Zones (AZs).
 
