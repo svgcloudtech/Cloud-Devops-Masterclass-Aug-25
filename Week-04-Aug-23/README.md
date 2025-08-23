@@ -38,21 +38,30 @@ Persistent storage volumes for your data using Amazon Elastic Block Store (Amazo
 Amazon EC2 provides you with flexible, cost effective, and easy-to-use data storage options for your instances. Each option has a unique combination of performance and durability. These storage options can be used independently or in combination to suit your requirements.
 
 **Block storage**
+
   **-Amazon EBS**
   **-Instance store temporary block storage for EC2 instances**
+
 **Object storage**
+
   **-Amazon S3**
+
 **File storage**
+
   **-Amazon EFS**
+
 ![alt text](images/image-2.png)
 
 **Instance store volumes**
+
 Storage volumes for temporary data that is deleted when you stop, hibernate, or terminate your instance.
 
 **Key pairs**
+
 Secure login information for your instances. AWS stores the public key and you store the private key in a secure place.
 
 **Security groups**
+
 A virtual firewall that allows you to specify the protocols, ports, and source IP ranges that can reach your instances, and the destination IP ranges to which your instances can connect.
 
 
