@@ -39,17 +39,17 @@ Amazon EC2 provides you with flexible, cost effective, and easy-to-use data stor
 
 **Block storage**
 
-  -Amazon EBS
+  - Amazon EBS
 
-  -Instance store temporary block storage for EC2 instances
+  - Instance store temporary block storage for EC2 instances
 
 **Object storage**
 
-  -Amazon S3
+  - Amazon S3
 
 **File storage**
 
-  -Amazon EFS
+  - Amazon EFS
 
 ![alt text](images/image-2.png)
 
