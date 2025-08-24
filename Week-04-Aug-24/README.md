@@ -1,0 +1,4 @@
+- **AWS CLI Setup**
+- **CLI commands**
+- **CloudWatch Basics**
+- **CloudTrail Overview**
