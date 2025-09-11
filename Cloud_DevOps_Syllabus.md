@@ -65,7 +65,7 @@ Progress: 0/0 completed
 
 Progress: 0/5 completed
 
-- [ ] Overview of AWS Cloud
+- [x] Overview of AWS Cloud
 - [ ] Setting up an AWS Account Core AWS Services: EC2, S3, EBS,
 - [ ] RDS, VPC, IAM, Auto Scaling & Load Balancing, Security Groups &
 - [ ] Network ACLs
