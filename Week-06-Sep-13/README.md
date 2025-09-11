@@ -2,11 +2,16 @@
 
 ## 📘 Topics Covered
 - [VPC Overview](#vpc-overview)  
+- [CIDR & Limits](#cidr--limits)  
 - [Subnets](#subnets)  
 - [Internet Gateway](#internet-gateway)  
-- [NAT Gateway](#nat-gateway)  
+- [Egress-only Internet Gateway](#egress-only-internet-gateway)  
+- [NAT Gateway vs NAT Instance](#nat-gateway-vs-nat-instance)  
+- [Route Tables](#route-tables)  
+- [Bastion Host](#bastion-host)  
 - [Network ACL (NACL)](#network-acl)  
 - [Security Groups](#security-groups)  
+- [NACL vs Security Groups](#nacl-vs-security-groups)  
 - [VPC Flow Logs](#vpc-flow-logs)  
 - [VPC Peering](#vpc-peering)  
 - [VPC Endpoints](#vpc-endpoints)  
@@ -18,103 +23,135 @@
 ---
 
 ## VPC Overview
-- **VPC (Virtual Private Cloud)**: Your own isolated private network inside AWS.  
-- **Scope**: Regional (spans all AZs in the region).  
-- **Control**: You decide IP ranges (CIDR), create subnets, route tables, and gateways.  
+- **VPC (Virtual Private Cloud)**: Isolated private network in AWS.  
+- **Scope**: Regional resource (spans all AZs).  
+- **Control**: Choose CIDR ranges (IPv4 & IPv6), subnets, route tables, gateways.  
 
-📌 **Note:** A subnet always belongs to a **single Availability Zone (AZ)**.
+---
+
+## CIDR & Limits
+- Max 5 VPCs per region (soft limit).  
+- Max 5 CIDR blocks per VPC.  
+- CIDR size: **/28 (16 IPs) to /16 (65,536 IPs)**.  
+- Allowed ranges: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16.  
+- CIDR must **not overlap** with corporate or other networks.  
 
 ---
 
 ## Subnets
-- **Public Subnet**: Internet-facing (requires Internet Gateway).  
-- **Private Subnet**: No direct internet access; can use NAT Gateway for outbound access.  
-- **Route Tables** define how subnets communicate with each other and with the outside world.
+- Each subnet is tied to **one AZ**.  
+- AWS reserves **5 IPs per subnet** (first 4 + last 1).  
+- Example: 10.0.0.0/24 → usable IPs = 251 (out of 256).  
+- Subnet types: **Public** (via IGW) & **Private** (via NAT GW/Instance).  
 
 ---
 
 ## Internet Gateway
-- Attached at **VPC level**.  
-- Required for internet access for public subnets.  
-- Outbound & inbound routes go through it.
+- Provides IPv4 & IPv6 internet access.  
+- Must be attached to the VPC.  
+- Only 1 IGW per VPC.  
 
 ---
 
-## NAT Gateway
-- Deployed in a **public subnet**.  
-- Allows private subnets to **initiate outbound** internet traffic (e.g., software updates).  
-- Managed by AWS, highly available within an AZ.
+## Egress-only Internet Gateway
+- **IPv6 only**.  
+- Allows outbound traffic to the internet but blocks inbound.  
 
 ---
 
-## Network ACL (NACL)
+## NAT Gateway vs NAT Instance
+- **NAT Gateway**: AWS-managed, scalable, AZ-specific, recommended.  
+- **NAT Instance**: Legacy, EC2-based, requires disabling Source/Destination check.  
+
+---
+
+## Route Tables
+- Define routes for subnets.  
+- Must explicitly add routes for IGW, VPC peering, and VPC endpoints.  
+
+---
+
+## Bastion Host
+- Public EC2 instance used to SSH into private subnet instances.  
+
+---
+
+## Network ACL
 - **Subnet-level firewall**.  
-- Rules: **Allow & Deny** supported.  
 - **Stateless**: return traffic must be explicitly allowed.  
-- Ordered list of rules, applied to all instances in subnet.
+- Supports **Allow & Deny** rules.  
+- Don’t forget to configure **Ephemeral Ports (1024–65535)**.  
 
 ---
 
 ## Security Groups
 - **Instance-level firewall**.  
-- Rules: **Only Allow** supported.  
 - **Stateful**: return traffic automatically allowed.  
-- Can reference IPs or other security groups.
+- Only **Allow** rules supported.  
 
 ---
 
 ## NACL vs Security Groups
-- **NACL**: First layer of defense, subnet-wide, stateless.  
-- **Security Group**: Second layer, instance-specific, stateful.
+- **NACL**: Subnet level, stateless, allow/deny.  
+- **SG**: Instance level, stateful, allow only.  
 
 ---
 
 ## VPC Flow Logs
-- Capture traffic metadata from:  
-  - VPC  
-  - Subnets  
-  - Elastic Network Interfaces (ENIs)  
-- Export to **S3** or **CloudWatch Logs** for analysis.
+- Capture metadata at **VPC, Subnet, or ENI** level.  
+- Record accepted/rejected traffic.  
+- Destination: **S3, CloudWatch Logs, Kinesis**.  
+- Use **Athena or CloudWatch Logs Insights** for queries.  
 
 ---
 
 ## VPC Peering
-- Connect two VPCs privately using AWS backbone.  
-- **Non-transitive**: if A ↔ B and B ↔ C, then A cannot talk to C unless peering is created separately.  
-- CIDR ranges must **not overlap**.
+- Private connection between 2 VPCs using AWS backbone.  
+- Must not overlap CIDRs.  
+- **Non-transitive**: A-B & B-C ≠ A-C.  
+- Must update route tables for communication.  
+- Supports **cross-account & cross-region**.  
 
 ---
 
 ## VPC Endpoints
-- Access AWS services **privately** without internet.  
-- **Gateway Endpoints**: S3, DynamoDB.  
-- **Interface Endpoints (PrivateLink)**: Other AWS services.
+- Provide **private connectivity** to AWS services without internet.  
+- Types:  
+  - **Gateway Endpoint**: S3, DynamoDB.  
+  - **Interface Endpoint (PrivateLink)**: Most AWS services.  
+- Redundant, scalable, removes need for IGW/NAT.  
 
 ---
 
 ## Site-to-Site VPN
-- Encrypted tunnel over **public internet** between on-prem and AWS.  
-- Requires **Customer Gateway (CGW)** and **Virtual Private Gateway (VGW)**.
+- Connects **on-premises to AWS** over encrypted tunnel via public internet.  
+- Requires **Customer Gateway (CGW)** and **Virtual Private Gateway (VGW)**.  
+- Often used as a **backup for Direct Connect**.  
 
 ---
 
 ## AWS Direct Connect
-- **Private dedicated connection** from on-prem to AWS.  
-- Pros: secure, stable, faster.  
-- Cons: costly, long setup time.
+- Dedicated private connection from data center to AWS.  
+- More secure, stable, low-latency.  
+- Expensive and longer setup time.  
+- Supports **high resiliency** with multiple redundant connections.  
 
 ---
 
 ## Transit Gateway
-- Central hub to connect **thousands of VPCs** and on-premises networks.  
-- Hub-and-spoke (star) topology.  
-- Works with Direct Connect and VPN.
+- Hub-and-spoke model for connecting thousands of VPCs + on-prem.  
+- **Transitive routing supported**.  
+- Regional resource, can peer across regions.  
+- Works with **Direct Connect Gateway & VPN**.  
+- Supports **Resource Access Manager (RAM)** for cross-account sharing.  
+- Supports **IP multicast** (unique to TGW).  
 
 ---
 
 ## Summary
-- **VPC Structure**: VPC → Subnets (AZ-specific).  
-- **Connectivity**: IGW (public), NAT GW (private-to-public).  
-- **Security**: NACL (stateless, subnet-level), SG (stateful, instance-level).  
-- **Observability**: Flow Logs for troubleshooting.  
-- **Interconnectivity**: Peering, Endpoints, VPN, Direct Connect, Transit Gateway.
+- **VPC Structure**: CIDR, subnets (AZ-specific).  
+- **Connectivity**: IGW, NAT GW, Egress-only IGW.  
+- **Security**: NACL (stateless), SG (stateful).  
+- **Access**: Bastion Host, Route Tables.  
+- **Observability**: Flow Logs.  
+- **Interconnectivity**: Peering, Endpoints, VPN, Direct Connect, Transit Gateway.  
